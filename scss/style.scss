@@ -6,5 +6,54 @@ header {
     /* 寬 高 文字顏色 背景顏色 */
     width: 80%;
     color: chartreuse;
-    background-color: coral;
+    background-color: firebrick;
+}
+
+// 判斷裝置的斷點
+// 超小裝置 <576px
+@media screen and (max-width: 576px) {
+    #main {
+        width: 50px;
+        background-color: orange;
+    }
+}
+
+//小裝置  >=576px
+@media screen and (min-width: 576px) {
+    #main {
+        width: 70px;
+        background-color: yellow;
+    }
+}
+
+//平板裝置 >=768px
+@media screen and (min-width: 768px) {
+    #main {
+        width: 100px;
+        background-color: green;
+    }
+}
+
+//大平板裝置 >=992px
+@media screen and (min-width: 992px) {
+    #main {
+        width: 130px;
+        background-color: lightskyblue;
+    }
+}
+
+//螢幕裝置  >=1200px
+@media screen and (min-width: 1200px) {
+    #main {
+        width: 160px;
+        background-color: blue;
+    }
+}
+
+//超大螢幕裝置  >=1400px
+@media screen and (min-width: 1400px) {
+    #main {
+        width: 190px;
+        background-color: purple;
+    }
 }

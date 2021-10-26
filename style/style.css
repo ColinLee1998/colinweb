@@ -28,6 +28,7 @@ header {
 @media screen and (min-width: 768px) {
   #main {
     width: 100px;
+    color: blue;
     background-color: yellow;
   }
 }
@@ -35,6 +36,7 @@ header {
 @media screen and (min-width: 992px) {
   #main {
     width: 130px;
+    color: white;
     background-color: green;
   }
 }

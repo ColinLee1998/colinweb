@@ -14,42 +14,42 @@ header {
 @media screen and (max-width: 576px) {
   #main {
     width: 50px;
-    background-color: orange;
+    background-color: firebrick;
   }
 }
 
 @media screen and (min-width: 576px) {
   #main {
     width: 70px;
-    background-color: yellow;
+    background-color: orange;
   }
 }
 
 @media screen and (min-width: 768px) {
   #main {
     width: 100px;
-    background-color: green;
+    background-color: yellow;
   }
 }
 
 @media screen and (min-width: 992px) {
   #main {
     width: 130px;
-    background-color: lightskyblue;
+    background-color: green;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #main {
     width: 160px;
-    background-color: blue;
+    background-color: lightskyblue;
   }
 }
 
 @media screen and (min-width: 1400px) {
   #main {
     width: 190px;
-    background-color: purple;
+    background-color: blue;
   }
 }
 /*# sourceMappingURL=style.css.map */

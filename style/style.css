@@ -17,9 +17,8 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  #main {
-    width: 50px;
-    background-color: firebrick;
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+    display: none;
   }
 }
 

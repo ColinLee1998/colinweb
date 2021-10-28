@@ -1,3 +1,10 @@
+// scss 繼承語法
+// 繼承區
+%Dn {
+    display: none;
+}
+
+
 // scss 巢狀語法
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
 header {
@@ -5,7 +12,13 @@ header {
         // 最上面只顯示 Logo 與 Menu，其餘不顯示
         // css3集合寫法
         #Portfolio, #About, #Project, #Contact {
-            display: none;
+            @extend %Dn;
         }
+    }
+}
+
+footer {
+    nav {
+        @extend %Dn;
     }
 }

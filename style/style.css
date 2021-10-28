@@ -17,7 +17,7 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact, footer nav {
     display: none;
   }
 }

@@ -1,0 +1,21 @@
+Chinese language 中文化
+
+AutoFileName : 讓編輯器自動完成圖片或檔案路徑。
+
+Auto Rename Tag : 讓成對的標籤自動一起修改。
+
+Auto Close Tag : 設定標籤自動閉合的原則。
+
+VS Color Picker：適用於Web開發人員的小巧智能顏色選擇器。
+
+vscode-icons：Visual Studio代碼的圖標。
+
+Bracket Pair Colorizer : 識別程式碼中的各種括號，並且標記上不同的顏色。
+
+Live Server：即時伺服器系統
+
+sass：sass/scss 編輯器
+
+Live Sass Compiler：sass編輯器
+
+Prettier：格式化設定

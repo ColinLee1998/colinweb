@@ -3,6 +3,10 @@
 %Dn {
     display: none;
 }
+%Subnav {
+    width: 50%;
+    color: white;
+}
 
 
 // scss 巢狀語法
@@ -19,6 +23,17 @@ header {
 
 footer {
     nav {
-        @extend %Dn;
+        #Graphic {
+            background-color: indigo;
+            @extend %Subnav;
+        }
+        #Web {
+            background-color: royalblue;
+            @extend %Subnav;
+        }
+        #Audio {
+            background-color: green;
+            @extend %Subnav;
+        }
     }
 }

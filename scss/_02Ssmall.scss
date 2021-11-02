@@ -31,10 +31,12 @@ header {
             clear: both
         }
         #Logo {
-            width: 100% / 10 * 8;
+            // 區塊分成8等分
+            width: $W1 * 8 + 5%;
         }
         #Menu {
-            width: 100% / 10 * 2;
+            // 區塊分成2等分
+            width: $W1 * 1 + 5%;
         }
 
         // 最上面只顯示 Logo 與 Menu，其餘不顯示

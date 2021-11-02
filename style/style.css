@@ -23,6 +23,12 @@
   header nav .Clear {
     clear: both;
   }
+  header nav #Logo {
+    width: 80%;
+  }
+  header nav #Menu {
+    width: 20%;
+  }
   footer nav #Graphic {
     background-color: indigo;
   }

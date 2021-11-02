@@ -30,6 +30,12 @@ header {
         .Clear {
             clear: both
         }
+        #Logo {
+            width: 100% / 10 * 8;
+        }
+        #Menu {
+            width: 100% / 10 * 2;
+        }
 
         // 最上面只顯示 Logo 與 Menu，其餘不顯示
         // css3集合寫法

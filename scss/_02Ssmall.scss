@@ -15,8 +15,7 @@
 header {
     nav {
         // Nav 的寬度高度變數傳回
-        width: $NW;
-        //height: $NH;
+        width: $NW;                                                                                                                                                       
         color: white;
         background-color: rgb(100, 100, 100);
 
@@ -33,6 +32,7 @@ header {
         #Logo {
             // 區塊分成8等分
             width: $W1 * 8 + 5%;
+            font-size: $text * 2;
         }
         #Menu {
             // 區塊分成2等分

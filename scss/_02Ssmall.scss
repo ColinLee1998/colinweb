@@ -3,6 +3,7 @@
 %Dn {
     display: none;
 }
+
 %Subnav {
     width: 50%;
     color: white;
@@ -13,6 +14,23 @@
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
 header {
     nav {
+        // Nav 的寬度高度變數傳回
+        width: $NW;
+        //height: $NH;
+        color: white;
+        background-color: rgb(100, 100, 100);
+
+        // 指向清單物件 li
+        li {
+            // 將 Logo 與 選單 排成一列，用 float
+            // 缺點是會自動往上增加一層，如果上一層框架沒有設定高度，會被無視存在
+            // 除了增加高度，可以使用 clear:both 移除浮點
+            float: left;
+        }
+        .Clear {
+            clear: both
+        }
+
         // 最上面只顯示 Logo 與 Menu，其餘不顯示
         // css3集合寫法
         #Portfolio, #About, #Project, #Contact {

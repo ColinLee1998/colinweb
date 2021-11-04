@@ -33,8 +33,11 @@
     width: 15%;
     text-align: center;
     line-height: 80px;
+    text-indent: -99999px;
     background-image: url(../../images/icon/000001.svg);
-    background-color: green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   footer nav #Graphic {
     background-color: indigo;

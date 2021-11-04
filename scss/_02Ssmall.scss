@@ -46,8 +46,16 @@ header {
             width: $W1 * 1 + 5%;
             text-align: center;
             line-height: 80px;
+            // 將文字移至裝置外
+            text-indent: -99999px;
+            // 背景圖片連結
             background-image: url(../../images/icon/000001.svg);
-            background-color: green;
+            // 背景圖片對齊 (定位點)
+            background-position: center;
+            // 背景圖片取消重複顯示
+            background-repeat: no-repeat;
+            // 背景圖片尺寸 auto自動 cover符合框架尺寸
+            background-size: cover;
         }
 
         // 最上面只顯示 Logo 與 Menu，其餘不顯示

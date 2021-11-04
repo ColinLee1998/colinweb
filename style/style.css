@@ -14,7 +14,6 @@
   }
   header nav {
     width: 100%;
-    height: 80px;
     color: white;
     background-color: #646464;
   }
@@ -34,11 +33,8 @@
     width: 15%;
     text-align: center;
     line-height: 80px;
-    background-color: aqua;
-  }
-  header nav #Menu img {
-    height: 80px;
-    background-color: aqua;
+    background-image: url(../../images/icon/000001.svg);
+    background-color: green;
   }
   footer nav #Graphic {
     background-color: indigo;

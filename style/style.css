@@ -26,6 +26,8 @@
   header nav #Logo {
     width: 85%;
     font-size: 32px;
+    text-indent: 30px;
+    line-height: 80px;
   }
   header nav #Menu {
     width: 15%;

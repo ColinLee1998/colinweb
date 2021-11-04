@@ -15,7 +15,8 @@
 header {
     nav {
         // Nav 的寬度高度變數傳回
-        width: $NW;                                                                                                                                                       
+        width: $NW;
+        height: 80px;                                                                                                                                                       
         color: white;
         background-color: rgb(100, 100, 100);
 
@@ -43,6 +44,13 @@ header {
         #Menu {
             // 區塊分成2等分
             width: $W1 * 1 + 5%;
+            text-align: center;
+            line-height: 80px;
+            background-color: aqua;
+            img {
+                height: 80px;
+                background-color: aqua;
+            }
         }
 
         // 最上面只顯示 Logo 與 Menu，其餘不顯示

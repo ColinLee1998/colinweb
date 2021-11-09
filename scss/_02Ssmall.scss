@@ -14,9 +14,9 @@
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
 header {
     nav {
-        // Nav 的寬度高度變數傳回
-        width: $NW;
-        // height: 80px;                                                                                                                                                       
+        // Nav 的寬度變數傳回
+        width: $NW; 
+        height: $NH;                                                                                                                                                     
         color: white;
         background-color: rgb(100, 100, 100);
 
@@ -39,13 +39,13 @@ header {
             text-indent: 30px;
             // 文字水平置中，行距設定 (父框架的高度 = 行距的數值) line-height: 80 * 0.15 + px;
             //方法1 父框架有高度時，父框架的高度 = 行距的數值;方法2 文字尺寸的倍數 + 3 (只限此程式中的框架)
-            line-height: $text * ( 2 + 3 ); // 2是上面 font-size 的倍數2
+            line-height: $NH; // 2是上面 font-size 的倍數2
         }
         #Menu {
             // 區塊分成2等分
             width: $W1 * 1 + 5%;
             text-align: center;
-            line-height: 80px;
+            line-height: $NH;
             // 將文字移至裝置外
             text-indent: -99999px;
             // 背景圖片連結
@@ -54,8 +54,9 @@ header {
             background-position: center;
             // 背景圖片取消重複顯示
             background-repeat: no-repeat;
-            // 背景圖片尺寸 auto自動 cover符合框架尺寸
-            background-size: cover;
+            // 背景圖片尺寸 auto自動 cover符合框架尺寸 (背景圖片小於容器時，放大圖片製容器的大小並填滿；背景圖片大於容器時，縮小圖片至容器大小並填滿；缺點，容器的長寬比例不合時，會出現背景圖片失真)
+            // contain (背景圖片大於容器時，縮小至容器內呈現，會留邊界)
+            background-size: contain;
         }
 
         // 最上面只顯示 Logo 與 Menu，其餘不顯示

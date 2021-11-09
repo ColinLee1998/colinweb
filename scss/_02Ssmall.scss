@@ -68,12 +68,16 @@ header {
     #BannerBox {
         // 輪播圖片 超小與小裝置 100% * 375px
         width: $W10;
-        height: 375px;
+        height: $BHsmall;
         background-color: cornflowerblue;
+        float: left;
         ul {
+            width: $W10 * 5;
+            height: $BHsmall;
             li {
                 width: $W10;
                 height: $BHsmall;
+                float: left;
             }
             .Box1 {
                 background-color: red;

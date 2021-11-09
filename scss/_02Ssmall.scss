@@ -65,6 +65,33 @@ header {
             @extend %Dn;
         }
     }
+    #BannerBox {
+        // 輪播圖片 超小與小裝置 100% * 375px
+        width: $W10;
+        height: 375px;
+        background-color: cornflowerblue;
+        ul {
+            li {
+                width: $W10;
+                height: $BHsmall;
+            }
+            .Box1 {
+                background-color: red;
+            }
+            .Box2 {
+                background-color: orange;
+            }
+            .Box3 {
+                background-color: yellow;
+            }
+            .Box4 {
+                background-color: green;
+            }
+            .Box5 {
+                background-color: blue;
+            }
+        }
+    }
 }
 
 footer {

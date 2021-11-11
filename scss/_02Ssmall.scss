@@ -1,15 +1,3 @@
-// scss 繼承語法
-// 繼承區
-%Dn {
-    display: none;
-}
-
-%Subnav {
-    width: 50%;
-    color: white;
-}
-
-
 // scss 巢狀語法
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
 header {
@@ -62,55 +50,44 @@ header {
         // 最上面只顯示 Logo 與 Menu，其餘不顯示
         // css3集合寫法
         #Portfolio, #About, #Project, #Contact {
-            @extend %Dn;
+            // @extend %Dn;
+            //呼叫 @mixin
+            @include DN;
         }
     }
     #BannerBox {
         // 輪播圖片 超小與小裝置 100% * 375px
         width: $W10;
         height: $BHsmall;
+        // 超出範圍設定，能滑動X軸，讓圖片在框架中左右滑動
+        overflow-x: auto;
         background-color: cornflowerblue;
-        float: left;
         ul {
             width: $W10 * 5;
-            height: $BHsmall;
             li {
-                width: $W10;
+                width: 375px;
                 height: $BHsmall;
                 float: left;
             }
             .Box1 {
-                background-color: red;
+                background-color: burlywood;
             }
             .Box2 {
-                background-color: orange;
+                background-color: goldenrod;
             }
             .Box3 {
-                background-color: yellow;
+                background-color: darkolivegreen;
             }
             .Box4 {
-                background-color: green;
+                background-color: chocolate;
             }
             .Box5 {
-                background-color: blue;
+                background-color: tan;
             }
         }
     }
 }
 
 footer {
-    nav {
-        #Graphic {
-            background-color: indigo;
-            @extend %Subnav;
-        }
-        #Web {
-            background-color: royalblue;
-            @extend %Subnav;
-        }
-        #Audio {
-            background-color: green;
-            @extend %Subnav;
-        }
-    }
+
 }

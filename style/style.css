@@ -5,13 +5,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
-    display: none;
-  }
-  footer nav #Graphic, footer nav #Web, footer nav #Audio {
-    width: 50%;
-    color: white;
-  }
   header nav {
     width: 100%;
     height: 65px;
@@ -40,44 +33,37 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+    display: none;
+  }
   header #BannerBox {
     width: 100%;
     height: 280px;
+    overflow-x: auto;
     background-color: cornflowerblue;
-    float: left;
   }
   header #BannerBox ul {
     width: 500%;
-    height: 280px;
   }
   header #BannerBox ul li {
-    width: 100%;
+    width: 375px;
     height: 280px;
     float: left;
   }
   header #BannerBox ul .Box1 {
-    background-color: red;
+    background-color: burlywood;
   }
   header #BannerBox ul .Box2 {
-    background-color: orange;
+    background-color: goldenrod;
   }
   header #BannerBox ul .Box3 {
-    background-color: yellow;
+    background-color: darkolivegreen;
   }
   header #BannerBox ul .Box4 {
-    background-color: green;
+    background-color: chocolate;
   }
   header #BannerBox ul .Box5 {
-    background-color: blue;
-  }
-  footer nav #Graphic {
-    background-color: indigo;
-  }
-  footer nav #Web {
-    background-color: royalblue;
-  }
-  footer nav #Audio {
-    background-color: green;
+    background-color: tan;
   }
 }
 

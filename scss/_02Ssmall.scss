@@ -34,17 +34,10 @@ header {
             width: $W1 * 1 + 5%;
             text-align: center;
             line-height: $NH;
-            // 將文字移至裝置外
-            text-indent: -99999px;
+            @include BgText;
             // 背景圖片連結
             background-image: url(../../images/icon/000001.svg);
-            // 背景圖片對齊 (定位點)
-            background-position: center;
-            // 背景圖片取消重複顯示
-            background-repeat: no-repeat;
-            // 背景圖片尺寸 auto自動 cover符合框架尺寸 (背景圖片小於容器時，放大圖片製容器的大小並填滿；背景圖片大於容器時，縮小圖片至容器大小並填滿；缺點，容器的長寬比例不合時，會出現背景圖片失真)
-            // contain (背景圖片大於容器時，縮小至容器內呈現，會留邊界)
-            background-size: contain;
+            background-color: rgb(75, 72, 72);
         }
 
         // 最上面只顯示 Logo 與 Menu，其餘不顯示
@@ -65,7 +58,7 @@ header {
         ul {
             width: $W10 * 5;
             li {
-                width: 375px;
+                width: 100vw;
                 height: $BHsmall;
                 float: left;
             }

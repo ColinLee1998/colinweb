@@ -28,10 +28,11 @@
     text-align: center;
     line-height: 65px;
     text-indent: -99999px;
-    background-image: url(../../images/icon/000001.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-image: url(../../images/icon/000001.svg);
+    background-color: #4b4848;
   }
   header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
     display: none;
@@ -46,7 +47,7 @@
     width: 500%;
   }
   header #BannerBox ul li {
-    width: 375px;
+    width: 100vw;
     height: 280px;
     float: left;
   }
@@ -64,13 +65,6 @@
   }
   header #BannerBox ul .Box5 {
     background-color: tan;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  #main {
-    width: 70px;
-    background-color: orange;
   }
 }
 

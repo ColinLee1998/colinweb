@@ -21,7 +21,7 @@ header {
             clear: both
         }
         #Logo {
-            // 寬度分成8等分
+            // 寬度分成 9 等分
             width: $W1 * 9;
             // 文字尺寸，內縮、水平置中
             font-size: $text * 2;
@@ -32,7 +32,7 @@ header {
             line-height: $NH; // 2是上面 font-size 的倍數2
         }
         #Menu {
-            // 區塊分成2等分
+            // 區塊分成 1 等分
             width: $W1;
             text-align: center;
             line-height: $NH;
@@ -64,21 +64,21 @@ header {
                 height: $BHsmall;
                 float: left;
             }
-            .Box1 {
-                background-color: burlywood;
-            }
-            .Box2 {
-                background-color: goldenrod;
-            }
-            .Box3 {
-                background-color: darkolivegreen;
-            }
-            .Box4 {
-                background-color: chocolate;
-            }
-            .Box5 {
-                background-color: tan;
-            }
+            // .Box1 {
+            //     background-color: burlywood;
+            // }
+            // .Box2 {
+            //     background-color: goldenrod;
+            // }
+            // .Box3 {
+            //     background-color: darkolivegreen;
+            // }
+            // .Box4 {
+            //     background-color: chocolate;
+            // }
+            // .Box5 {
+            //     background-color: tan;
+            // }
         }
     }
 }

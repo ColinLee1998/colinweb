@@ -3,11 +3,24 @@
 header {
     nav {
         // Nav 的寬度變數傳回
-        width: $NW;                                                                                                                                                      
-        color: white;
+        width: $NW;
         background-color: rgb(100, 100, 100);
 
-        // 彈性物件
+        // 顯示方式：彈性佈局 要排列物的父框架
+        display: flex;
+
+        #Logo {
+            // 寬度
+            width: $W1 * 3;
+            // 水平置中
+            text-align: center;
+            // 文字尺寸
+            font-size: $Em * 2.5;
+
+            // 清除小裝置設定 首行縮排
+            text-indent: 0;
+            background-color: white;
+        }
 
         // 指向清單物件 li
         li {
@@ -18,9 +31,6 @@ header {
         }
         .Clear {
             clear: both
-        }
-        #Logo {
-
         }
 
         // 最上面只顯示 Logo 與 Menu，其餘不顯示

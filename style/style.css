@@ -162,8 +162,17 @@
 @media screen and (min-width: 992px) {
   header nav {
     width: 100%;
-    color: white;
     background-color: #646464;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav #Logo {
+    width: 30%;
+    text-align: center;
+    font-size: 2.5em;
+    text-indent: 0;
+    background-color: white;
   }
   header nav li {
     float: left;

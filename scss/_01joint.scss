@@ -71,3 +71,14 @@ $Em: 1em;
     // contain (背景圖片大於容器時，縮小至容器內呈現，會留邊界)
     background-size: contain;
 }
+
+// 設定 05 06 07 檔案共用的寬度、導覽列的按鈕，所以會在 nav 內呼叫
+@mixin LargeNav {
+    #Logo {
+        // 寬度
+        width: $W1 * 3;
+    }
+    li {
+        width: ($W10 - 30%) / 4;
+    }
+}

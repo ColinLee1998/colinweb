@@ -8,10 +8,9 @@
 }
 
 //小裝置  >=576px
-// 目前不需要此裝置的設定，以後有需要再打開
-// @media screen and (min-width: 576px) {
-//     @import '_03Lsmall.scss';
-// }
+@media screen and (min-width: 576px) {
+    @import '_03Lsmall.scss';
+}
 
 //平板裝置 >=768px
 @media screen and (min-width: 768px) {

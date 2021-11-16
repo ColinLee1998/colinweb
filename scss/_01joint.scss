@@ -8,6 +8,10 @@
     百分比(%)的缺點，舊瀏覽器(IE)不支援；MAC瀏覽器(Safari)，因為手機版需要扣除瀏覽器自帶按鈕功能(在畫面下方)。
     行距 文字，百分比的單位 em (子物件的設定值會疊加父物件的設定值) 和 rem (不受父物件設定值影響)。
 */
+
+// 匯入檔案 需在所有設定之前
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
 $W10: 100%; //100%的值
 
 * {
@@ -19,6 +23,8 @@ $W10: 100%; //100%的值
     padding: 0;
     // 隱藏項目符號
     list-style-type: none;
+    // 字型
+    font-family: 'cwTeXYen', sans-serif, '微軟正黑體';
 }
 
 // 輪播圖

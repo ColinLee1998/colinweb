@@ -41,6 +41,15 @@ header {
 			background-color: rgb(75, 72, 72);
 		}
 
+		// 手機版的導覽列
+		#MobileNav {
+			width: $W1 * 10;
+			// 高度單位 vh (裝置的可視高度)
+			height: 100vh;
+			background-color: tomato;
+			text-decoration: none;
+		}
+
 		// 最上面只顯示 Logo 與 Menu，其餘不顯示
 		// css3集合寫法
 		#Portfolio,

@@ -11,16 +11,41 @@
     <!-- 頁首 -->
     <header>
         <nav id="nav">
-            <li id="Logo">Colin's Studio</li>
-            <li id="Portfolio">作品集</li>
-            <li id="About">關於我</li>
-            <li id="Project">專案流程</li>
-            <li id="Contact">聯絡方式</li>
+            <li id="Logo">
+                <a href="index.html" style="text-decoration: none; color:#808040;">Colin's Studio</a>
+            </li>
+            <li id="Portfolio">
+                <a href="#PortfolioBox" style="text-decoration: none; color:#808040;">作品集</a>
+            </li>
+            <li id="About">
+                <a href="#AboutBox" style="text-decoration: none; color:#808040;">關於我</a>
+            </li>
+            <li id="Project">
+                <a href="#ProjectBox" style="text-decoration: none; color:#808040;">專案流程</a>
+            </li>
+            <li id="Contact">
+                <a href="#ContactBox" style="text-decoration: none; color:#808040;">聯絡方式</a>
+            </li>
             <li id="Menu">
                 <!-- 將圖片改文字輸出，樣式設定還是顯示圖；符合 SEO 用法；因為圖片可以水平置中，但無法垂直置中 -->
                 Colin作品選單
                 <!-- <img src="images/icon/000001.svg" alt="選單" title="選單項目"> -->
             </li>
+            <!-- 手機版的導覽列 -->
+            <ul id="MobileNav">
+                <li id="MobilePortfolio">
+                    <a href="#PortfolioBox">作品集</a>
+                </li>
+                <li id="MobileAbout">
+                    <a href="#AboutBox">關於我</a>
+                </li>
+                <li id="MobileProject">
+                    <a href="#ProjectBox">專案流程</a>
+                </li>
+                <li id="MobileContact">
+                    <a href="#ContactBox">聯絡方式</a>
+                </li>
+            </ul>
             <p class="Clear"></p>
         </nav>
         <!-- 基本輪播圖片 一組 5張圖 -->
@@ -50,19 +75,16 @@
     <!-- main標籤在舊IE無法使用，使用<div>並用id標籤解決，或是用<article>。-->
     <article id="main">
         <article>
-            <h1>首頁</h1>
+            <h1 id="PortfolioBox">作品集</h1>
         </article>
         <article>
-            <h1>作品集</h1>
+            <h1 id="AboutBox">關於我</h1>
         </article>
         <article>
-            <h1>關於我</h1>
+            <h1 id="ProjectBox">專案流程</h1>
         </article>
         <article>
-            <h1>專案流程</h1>
-        </article>
-        <article>
-            <h1>聯絡方式</h1>
+            <h1 id="ContactBox">聯絡方式</h1>
         </article>
     </article>
 

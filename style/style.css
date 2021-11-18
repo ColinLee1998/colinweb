@@ -46,6 +46,12 @@
     background-image: url(../../images/icon/000001.svg);
     background-color: #4b4848;
   }
+  header nav #MobileNav {
+    width: 100%;
+    height: 100vh;
+    background-color: tomato;
+    text-decoration: none;
+  }
   header nav #Portfolio,
   header nav #About,
   header nav #Project,
@@ -209,6 +215,9 @@
     display: block;
   }
   header nav #Menu {
+    display: none;
+  }
+  header nav #MobileNav {
     display: none;
   }
   header #BannerBox {

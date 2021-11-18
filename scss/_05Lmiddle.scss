@@ -51,6 +51,10 @@ header {
 		#Menu {
 			@include DN;
 		}
+
+		#MobileNav {
+			@include DN;
+		}
 	}
 	#BannerBox {
 		// 輪播圖片 超小與小裝置 100% * 375px

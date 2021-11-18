@@ -73,15 +73,15 @@ $Em: 1em;
 }
 
 // 設定 05 06 07 檔案共用的寬度、導覽列的按鈕，所以會在 nav 內呼叫
-@mixin LargeNav {
+@mixin LargeNav($multiple, $BtnNum) {
 	// 計算方式
 	// 設定 寬度的基準值 5%
 	$W05: 5%;
-	// 設定 代表 Logo寬度 的變數 30% ；寬度的倍數
-	$LogoWidth: $W05 * 6;
+	// 設定 代表 Logo寬度 的變數 30% ；寬度的倍數 6 multiple
+	$LogoWidth: $W05 * $multiple;
 
-	// 設定 代表 li寬度 的變數 ；(總寬度 - Logo寬度) / 剩餘的按鈕數
-	$liWidth: ($W10 - $LogoWidth) / 4;
+	// 設定 代表 li寬度 的變數 ；(總寬度 - Logo寬度) / 剩餘的按鈕數 BtnNum 4 70% / 4 = 17.5%
+	$liWidth: ($W10 - $LogoWidth) / $BtnNum;
 	// 樣式表
 	#Logo {
 		// 寬度

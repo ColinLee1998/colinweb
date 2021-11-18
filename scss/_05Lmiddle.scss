@@ -1,85 +1,88 @@
 // scss 巢狀語法
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
 header {
-    nav {
-        // Nav 的寬度變數傳回
-        width: $NW;
-        background-color: rgb(100, 100, 100);
+	nav {
+		// Nav 的寬度變數傳回
+		width: $NW;
+		color: #808040;
+		background-color: #cac4bf;
 
-        // 顯示方式：彈性佈局 要排列物的父框架
-        display: flex;
+		// 顯示方式：彈性佈局 要排列物的父框架
+		display: flex;
 
-        // 呼叫 導覽列按鈕的寬度設定
-        @include LargeNav;
+		// 呼叫 導覽列按鈕的寬度設定
+		@include LargeNav(6, 4);
 
-        // 商標
-        #Logo {
-            // 水平置中
-            text-align: center;
-            // 文字尺寸
-            font-size: $text * 2.5;
+		// 商標
+		#Logo {
+			// 水平置中
+			text-align: center;
+			// 文字尺寸
+			font-size: $text * 2.5;
 
-            // 清除小裝置設定 首行縮排
-            text-indent: 0;
-            background-color: rgb(100, 100, 100);
-        }
+			// 清除小裝置設定 首行縮排
+			text-indent: 0;
+			color: #bb3d00;
+			background-color: #ffbd9d;
+		}
 
-        // 按鈕共用值 li
-        li {
-            // 文字對齊 水平、垂直 置中
-            text-align: center;
-            // 文字尺寸
-            font-size: $text * 1.3;
-            // 行距
-            line-height: $text * (2 + 2.3);
-        }
-        .Clear {
-            clear: both
-        }
+		// 按鈕共用值 li
+		li {
+			// 文字對齊 水平、垂直 置中
+			text-align: center;
+			// 文字尺寸
+			font-size: $text * 1.3;
+			// 行距
+			line-height: $text * (2 + 2.3);
+		}
+		.Clear {
+			clear: both;
+		}
 
-        // 最上面只顯示 Logo 與 Menu，其餘不顯示
-        // css3集合寫法
-        #Portfolio, #About, #Project, #Contact {
-            @include ON;
-        }
+		// 最上面只顯示 Logo 與 Menu，其餘不顯示
+		// css3集合寫法
+		#Portfolio,
+		#About,
+		#Project,
+		#Contact {
+			@include ON;
+		}
 
-        #Menu {
-            @include DN;
-        }
-    }
-    #BannerBox {
-        // 輪播圖片 超小與小裝置 100% * 375px
-        width: $W10;
-        height: $BHsmall;
-        // 超出範圍設定，能滑動X軸，讓圖片在框架中左右滑動
-        overflow-x: auto;
-        background-color: cornflowerblue;
-        ul {
-            width: $W10 * 5;
-            li {
-                width: 100vw;
-                height: $BHsmall;
-                float: left;
-            }
-            // .Box1 {
-            //     background-color: burlywood;
-            // }
-            // .Box2 {
-            //     background-color: goldenrod;
-            // }
-            // .Box3 {
-            //     background-color: darkolivegreen;
-            // }
-            // .Box4 {
-            //     background-color: chocolate;
-            // }
-            // .Box5 {
-            //     background-color: tan;
-            // }
-        }
-    }
+		#Menu {
+			@include DN;
+		}
+	}
+	#BannerBox {
+		// 輪播圖片 超小與小裝置 100% * 375px
+		width: $W10;
+		height: $BHsmall;
+		// 超出範圍設定，能滑動X軸，讓圖片在框架中左右滑動
+		overflow-x: auto;
+		ul {
+			width: $W10 * 5;
+			li {
+				width: 100vw;
+				height: $BHsmall;
+				float: left;
+			}
+			// .Box1 {
+			//     background-color: burlywood;
+			// }
+			// .Box2 {
+			//     background-color: goldenrod;
+			// }
+			// .Box3 {
+			//     background-color: darkolivegreen;
+			// }
+			// .Box4 {
+			//     background-color: chocolate;
+			// }
+			// .Box5 {
+			//     background-color: tan;
+			// }
+		}
+	}
 }
 
 footer {
-
 }

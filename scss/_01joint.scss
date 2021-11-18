@@ -15,16 +15,16 @@
 $W10: 100%; //100%的值
 
 * {
-    // 頁面與物件邊界，設定水平置中
+	// 頁面與物件邊界，設定水平置中
 
-    // 4個值分別是：上 右 下 左 ; 2個值分別為：上下 左右
-    margin: 0 auto;
-    // 物件與物件邊界
-    padding: 0;
-    // 隱藏項目符號
-    list-style-type: none;
-    // 字型
-    font-family: 'cwTeXYen', sans-serif, '微軟正黑體';
+	// 4個值分別是：上 右 下 左 ; 2個值分別為：上下 左右
+	margin: 0 auto;
+	// 物件與物件邊界
+	padding: 0;
+	// 隱藏項目符號
+	list-style-type: none;
+	// 字型
+	font-family: "cwTeXYen", sans-serif, "微軟正黑體";
 }
 
 // 輪播圖
@@ -32,7 +32,7 @@ $BHsmall: 280px; // 設定超小與小裝置 BannerBox 的高
 
 // 變數區
 $NW: 100%; // 導覽列的寬 (Nav 的  Width)
-$NH: 65px;  //導覽列的高
+$NH: 65px; //導覽列的高
 $W1: $W10 / 10 * 1;
 $W2: $W10 / 10 * 2;
 $W3: $W10 / 10 * 3;
@@ -48,37 +48,46 @@ $Em: 1em;
 // scss 繼承語法
 // 繼承區 無法直接撰寫在共用區呼叫；也無法與 mixin 混和函式共用
 %Dn {
-    display: none;
+	display: none;
 }
 
 // MIXIN 混和模式
 @mixin DN {
-    display: none;
+	display: none;
 }
 
 @mixin ON {
-    display: block;
+	display: block;
 }
 
 @mixin BgText {
-    // 將文字移至裝置外
-    text-indent: -99999px;
-    // 背景圖片對齊 (定位點)
-    background-position: center;
-    // 背景圖片取消重複顯示
-    background-repeat: no-repeat;
-    // 背景圖片尺寸 auto自動 cover符合框架尺寸 (背景圖片小於容器時，放大圖片製容器的大小並填滿；背景圖片大於容器時，縮小圖片至容器大小並填滿；缺點，容器的長寬比例不合時，會出現背景圖片失真)
-    // contain (背景圖片大於容器時，縮小至容器內呈現，會留邊界)
-    background-size: contain;
+	// 將文字移至裝置外
+	text-indent: -99999px;
+	// 背景圖片對齊 (定位點)
+	background-position: center;
+	// 背景圖片取消重複顯示
+	background-repeat: no-repeat;
+	// 背景圖片尺寸 auto自動 cover符合框架尺寸 (背景圖片小於容器時，放大圖片製容器的大小並填滿；背景圖片大於容器時，縮小圖片至容器大小並填滿；缺點，容器的長寬比例不合時，會出現背景圖片失真)
+	// contain (背景圖片大於容器時，縮小至容器內呈現，會留邊界)
+	background-size: contain;
 }
 
 // 設定 05 06 07 檔案共用的寬度、導覽列的按鈕，所以會在 nav 內呼叫
 @mixin LargeNav {
-    #Logo {
-        // 寬度
-        width: $W1 * 3;
-    }
-    li {
-        width: ($W10 - 30%) / 4;
-    }
+	// 計算方式
+	// 設定 寬度的基準值 5%
+	$W05: 5%;
+	// 設定 代表 Logo寬度 的變數 30% ；寬度的倍數
+	$LogoWidth: $W05 * 6;
+
+	// 設定 代表 li寬度 的變數 ；(總寬度 - Logo寬度) / 剩餘的按鈕數
+	$liWidth: ($W10 - $LogoWidth) / 4;
+	// 樣式表
+	#Logo {
+		// 寬度
+		width: $W1 * 3;
+	}
+	li {
+		width: ($W10 - 30%) / 4;
+	}
 }

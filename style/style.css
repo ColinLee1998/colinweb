@@ -46,17 +46,17 @@
     background-image: url(../../images/icon/000001.svg);
     background-color: #4b4848;
   }
-  header nav #MobileNav {
-    width: 100%;
-    height: 100vh;
-    background-color: tomato;
-    text-decoration: none;
-  }
   header nav #Portfolio,
   header nav #About,
   header nav #Project,
   header nav #Contact {
     display: none;
+  }
+  header #MobileNav {
+    width: 100%;
+    height: 100vh;
+    background-color: tomato;
+    text-decoration: none;
   }
   header #BannerBox {
     width: 100%;
@@ -109,6 +109,12 @@
   header nav #Project,
   header nav #Contact {
     display: none;
+  }
+  header #MobileNav {
+    width: 100%;
+    height: 100vh;
+    background-color: tomato;
+    text-decoration: none;
   }
   header #BannerBox {
     width: 100%;

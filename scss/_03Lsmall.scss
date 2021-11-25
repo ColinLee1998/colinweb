@@ -54,6 +54,16 @@ header {
 			@include DN;
 		}
 	}
+
+	// 手機版的導覽列
+	#MobileNav {
+		width: $W1 * 10;
+		// 高度單位 vh (裝置的可視高度)
+		height: 100vh;
+		background-color: tomato;
+		text-decoration: none;
+	}
+
 	#BannerBox {
 		// 輪播圖片 超小與小裝置 100% * 375px
 		width: $W10;

@@ -4,7 +4,8 @@ header {
 	nav {
 		// Nav 的寬度變數傳回
 		width: $NW;
-		height: $NH;
+		// 設定 手機版的導覽列 63行，定位點與階層語法，被 nav 的高度設定給抵消，所以才隱藏 nav 的高度
+		// height: $NH;
 		color: #bb3d00;
 		background-color: #ffbd9d;
 		// 指向清單物件 li
@@ -58,6 +59,9 @@ header {
 		width: $W1 * 10;
 		// 高度單位 vh (裝置的可視高度)
 		height: 100vh;
+		// 定位點 絕對定位 設定階層
+		position: absolute;
+		z-index: 10;
 		background-color: tomato;
 		text-decoration: none;
 	}

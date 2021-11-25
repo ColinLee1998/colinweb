@@ -56,6 +56,7 @@
     height: 100vh;
     position: absolute;
     z-index: 10;
+    display: none;
     background-color: tomato;
     text-decoration: none;
   }
@@ -146,11 +147,8 @@
     clear: both;
   }
   header nav #Logo {
-    width: 90%;
-    font-size: 32px;
     text-align: center;
-    text-indent: 30px;
-    line-height: 65px;
+    text-indent: 0;
   }
   header nav #Menu {
     width: 10%;

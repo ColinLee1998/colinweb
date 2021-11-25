@@ -18,17 +18,10 @@ header {
 			clear: both;
 		}
 		#Logo {
-			// 寬度分成 9 等分
-			width: $W1 * 9;
-			// 文字尺寸，內縮、水平置中
-			font-size: $text * 2;
 			// 文字重直置中
 			text-align: center;
-			// 內縮方法一，首行縮排 (單行文字)
-			text-indent: 30px;
-			// 文字水平置中，行距設定 (父框架的高度 = 行距的數值) line-height: 80 * 0.15 + px;
-			//方法1 父框架有高度時，父框架的高度 = 行距的數值;方法2 文字尺寸的倍數 + 3 (只限此程式中的框架)
-			line-height: $NH; // 2是上面 font-size 的倍數2
+			// 不內縮
+			text-indent: 0;
 		}
 		#Menu {
 			// 區塊分成 1 等分

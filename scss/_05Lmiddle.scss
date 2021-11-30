@@ -59,14 +59,14 @@ header {
 	#BannerBox {
 		// 輪播圖片 超小與小裝置 100% * 375px
 		width: $W10;
-		height: $BHsmall;
+		// 內間距當成高度用
+		padding-bottom: 40vh;
 		// 超出範圍設定，能滑動X軸，讓圖片在框架中左右滑動
 		overflow-x: auto;
 		ul {
 			width: $W10 * 5;
 			li {
 				width: 100vw;
-				height: $BHsmall;
 				float: left;
 			}
 			// .Box1 {

@@ -21,8 +21,8 @@ a {
 }
 
 a:hover {
-  color: #CD853F;
-  font-weight: 520;
+  color: aquamarine;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {

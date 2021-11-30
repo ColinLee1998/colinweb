@@ -27,6 +27,19 @@ $W10: 100%; //100%的值
 	font-family: "cwTeXYen", sans-serif, "微軟正黑體";
 }
 
+a {
+	// 隱藏超連結底線
+	text-decoration: none;
+	// 設定文字顏色
+	color: #808040;
+}
+
+a:hover {
+	// 鼠標移到連結上會變顏色與變寬
+	color: #CD853F;
+	font-weight: 520;
+}
+
 // 輪播圖
 $BHsmall: 280px; // 設定超小與小裝置 BannerBox 的高
 

@@ -15,6 +15,11 @@
   font-family: "cwTeXYen", sans-serif, "微軟正黑體";
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   color: #808040;

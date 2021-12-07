@@ -61,13 +61,7 @@ header {
 		width: $W10;
 		// 超出範圍設定，能滑動X軸，讓圖片在框架中左右滑動
 		overflow-x: auto;
-		ul {
-			width: $W10 * 5;
-			li {
-				width: 100vw;
-				float: left;
-			}
-		}
+		// 讀取 03Small 的資料
 	}
 }
 

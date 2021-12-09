@@ -59,31 +59,31 @@
                 <!-- 將 picture 標籤當為一張圖片，裡面可以寫入不同尺寸的相同圖片；例如：輪播圖有 5 張，需設定 5 個 picture 標籤，
                 每組標籤內可放入不同尺寸但內容卻相同的圖片。 -->
                 <picture class="ImgBox01 SmallImg">
-                    <source class="SmallImg" srcset="images/banner/s/banner01.jpg" media="(max-width: 767px)">
+                    <source srcset="images/banner/s/banner01.jpg" media="(max-width: 767px)">
                     <source srcset="images/banner/m/banner01.jpg" media="(max-width: 1023px)">
                     <source srcset="images/banner/banner01.jpg" media="(min-width: 1024px)">
                     <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox02 SmallImg">
-                    <source class="SmallImg" srcset="images/banner/s/banner02.jpg" media="(max-width: 767px)">
+                    <source srcset="images/banner/s/banner02.jpg" media="(max-width: 767px)">
                     <source srcset="images/banner/m/banner02.jpg" media="(max-width: 1023px)">
                     <source srcset="images/banner/banner02.jpg" media="(min-width: 1024px)">
                     <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox03 SmallImg">
-                    <source class="SmallImg" srcset="images/banner/s/banner03.jpg" media="(max-width: 767px)">
+                    <source srcset="images/banner/s/banner03.jpg" media="(max-width: 767px)">
                     <source srcset="images/banner/m/banner03.jpg" media="(max-width: 1023px)">
                     <source srcset="images/banner/banner03.jpg" media="(min-width: 1024px)">
                     <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox04 SmallImg">
-                    <source class="SmallImg" srcset="images/banner/s/banner04.jpg" media="(max-width: 767px)">
+                    <source srcset="images/banner/s/banner04.jpg" media="(max-width: 767px)">
                     <source srcset="images/banner/m/banner04.jpg" media="(max-width: 1023px)">
                     <source srcset="images/banner/banner04.jpg" media="(min-width: 1024px)">
                     <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox05 SmallImg">
-                    <source class="SmallImg" srcset="images/banner/s/banner05.jpg" media="(max-width: 767px)">
+                    <source srcset="images/banner/s/banner05.jpg" media="(max-width: 767px)">
                     <source srcset="images/banner/m/banner05.jpg" media="(max-width: 1023px)">
                     <source srcset="images/banner/banner05.jpg" media="(min-width: 1024px)">
                     <img src="images/icon/camera.svg" alt="">
@@ -105,8 +105,8 @@
         <article>
             <h1 id="ProjectBox">專案流程</h1>
         </article>
-        <article>
-            <h1 id="ContactBox">聯絡方式</h1>
+        <article id="ContactBox">
+            <h1 id="ContactTitle">聯絡表單</h1>
             <!-- 表單 form ，實際用途是傳輸資料用，將資料寫入資料庫或由資料庫讀出修改 -->
             <!-- get 傳輸不重要的資料，資料會顯示在網址上；post傳輸重要的資料，直接加密方式傳送 -->
             <form action="" method="get">
@@ -133,12 +133,13 @@
                     <!-- 單行文字，讓使用者自行輸入帳號；@固定出現； 信箱跟 gmail.com or yahoo.com 等等，用下拉式選單
                     讓使用者挑選 -->
                     <input type="text" name="" id="E_mail2" required placeholder="輸入信箱名稱">
-                    <li>@</li>
+                    <!-- 行內標籤 span 不換行，用來強調或是突顯單獨的顏色
+                    <span>@</span>
                     <select name="" id="">
                         <option value="gmail.com">gmail.com</option>
                         <option value="yahoo.com.tw">yahoo.com.tw</option>
                         <option value="pchome.com">pchome.com</option>
-                    </select>
+                    </select> -->
                 </label>
 
                 <!-- 詢問問題 -->
@@ -193,7 +194,7 @@
             <li>Instagram</li>
         </address>
         <h6>
-            網站全部圖文係屬作者版權所有•Copyright &copy; 2021 by lccnet.all Rights Reserved 文中所提及之產品名稱，分別隸屬該註冊公司•
+            網站全部圖文係屬作者版權所有 &copy; 2021 - <span>2022</span>
         </h6>
     </footer>
 </body>

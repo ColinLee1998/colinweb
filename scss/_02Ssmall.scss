@@ -20,7 +20,7 @@ header {
 		}
 		#Logo {
 			// 寬度分成8等分
-			width: $W1 * 8 + 5%;
+			width: $W1 * 8 + 5vw;
 			// 文字尺寸，內縮、水平置中
 			font-size: $text * 2;
 			// 內縮方法一，首行縮排 (單行文字)
@@ -33,7 +33,7 @@ header {
 		}
 		#Menu {
 			// 區塊分成2等分
-			width: $W1 * 1 + 5%;
+			width: $W1 * 1 + 5vw;
 			text-align: center;
 			line-height: $NH;
 			@include BgText;
@@ -153,5 +153,28 @@ footer {
 		// 文字粗細
 		font-weight: 200;
 		background-color: chocolate;
+	}
+}
+
+#main {
+	#ContactBox {
+		// 寬度 左右留白
+		width: $W1 * 9;
+		background-color: #ffbd9d;
+
+		// 標題
+		#ContactTitle {
+			// 外間距 margin ；上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
+			padding: {
+				top: 15px;
+				bottom: 15px;
+			}
+		}
+
+		form {
+			.E_mail2 {
+				@include DN;
+			}
+		}
 	}
 }

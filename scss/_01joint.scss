@@ -12,7 +12,7 @@
 // 匯入檔案 需在所有設定之前
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 
-$W10: 100%; //100%的值
+$W10: 100vw; //100%的值
 
 * {
 	// 頁面與物件邊界，設定水平置中
@@ -94,7 +94,7 @@ $Em: 1em;
 @mixin LargeNav($multiple, $BtnNum) {
 	// 計算方式
 	// 設定 寬度的基準值 5%
-	$W05: 5%;
+	$W05: 5vw;
 	// 設定 代表 Logo寬度 的變數 30% ；寬度的倍數 6 multiple
 	$LogoWidth: $W05 * $multiple;
 
@@ -106,6 +106,6 @@ $Em: 1em;
 		width: $W1 * 3;
 	}
 	li {
-		width: ($W10 - 30%) / 4;
+		width: ($W10 - 30vw) / 4;
 	}
 }

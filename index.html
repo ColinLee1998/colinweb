@@ -116,56 +116,65 @@
                 <!-- 指定初始值 value ；使用者需刪除內容，才可以填入資料 -->
                 <!-- readonly 唯獨不可以更改內容；由資料庫導入資料時設定，可利用 js 判斷開啟功能 -->
                 <!-- 必填 required ；指定最多能輸入多少文字 maxlength ；指定最少需要輸入多少文字 minlength -->
-                <li>
+                <div id="NameBox">
                     <label for="UserName">姓名：</label>
                     <input type="text" name="" id="UserName" value="請輸入中文姓名" required 
                     minlength="3" maxlength="5">
-                </li>
-                <label for="E_mail">
-                    電子信箱
-                    <input type="email" name="" id="E_mail" required placeholder="輸入可以接收到的電子信箱">
-                </label>
+                </div>
+
+                <div class="Mail">
+                    <label for="E_mail">
+                        電子信箱
+                        <input type="email" name="" id="E_mail" required placeholder="輸入可以接收到的電子信箱">
+                    </label>
+                </div>
                 <!-- 換行 -->
                 <br>
                 <!-- label 沒有換行功能 -->
-                <label for="E_mail2">
-                    電子信箱
-                    <!-- 單行文字，讓使用者自行輸入帳號；@固定出現； 信箱跟 gmail.com or yahoo.com 等等，用下拉式選單
-                    讓使用者挑選 -->
-                    <input type="text" name="" id="E_mail2" required placeholder="輸入信箱名稱">
-                    <!-- 行內標籤 span 不換行，用來強調或是突顯單獨的顏色
-                    <span>@</span>
-                    <select name="" id="">
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="yahoo.com.tw">yahoo.com.tw</option>
-                        <option value="pchome.com">pchome.com</option>
-                    </select> -->
-                </label>
+                <div class="E_mail2">
+                    <label for="E_mail2">
+                        電子信箱
+                        <!-- 單行文字，讓使用者自行輸入帳號；@固定出現； 信箱跟 gmail.com or yahoo.com 等等，用下拉式選單
+                        讓使用者挑選 -->
+                        <input type="text" name="" id="E_mail2" required placeholder="輸入信箱名稱">
+                        <!-- 行內標籤 span 不換行，用來強調或是突顯單獨的顏色 -->
+                        <span>@</span>
+                        <select name="" id="">
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="yahoo.com.tw">yahoo.com.tw</option>
+                            <option value="pchome.com">pchome.com</option>
+                        </select>
+                    </label>
+                </div>
 
                 <!-- 詢問問題 -->
-                <label for="Question">
-                    <li>詢問問題</li>
-                    <!-- 單選鈕 radio 送出資料為同一群組，name 的名稱要相同；寫入資料庫的值為 value 的內容。 -->
-                    <li>
-                        <input type="radio" name="Question" value="平面設計">平面設計
-                    </li>
-                    <li>
-                        <input type="radio" name="Question" value="網頁設計">網頁設計
-                    </li>
-                    <li>
-                        <input type="radio" name="Question" value="影音設計">影音設計
-                    </li>
-                    <li>
-                        <input type="radio" name="Question" value="其他合作">其他合作
-                    </li>
-                </label>
+                <div class="Ques">
+                    <label for="Question">
+                        <li>詢問問題</li>
+                        <!-- 單選鈕 radio 送出資料為同一群組，name 的名稱要相同；寫入資料庫的值為 value 的內容。 -->
+                        <li>
+                            <input type="radio" name="Question" value="平面設計">平面設計
+                        </li>
+                        <li>
+                            <input type="radio" name="Question" value="網頁設計">網頁設計
+                        </li>
+                        <li>
+                            <input type="radio" name="Question" value="影音設計">影音設計
+                        </li>
+                        <li>
+                            <input type="radio" name="Question" value="其他合作">其他合作
+                        </li>
+                    </label>
+                </div>
 
                 <!-- 多行文字 textarea ； placeholder 輸入的提示訊息，輸入資料時會自動消失 -->
-                <label for="">
-                    詳細內容
-                    <textarea name="" id="" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" 
-                    maxlength="100" minlength="10"></textarea>
-                </label>
+                <div class="Text">
+                    <label for="">
+                        <li>詳細內容：</li>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" 
+                        maxlength="100" minlength="10"></textarea>
+                    </label>
+                </div>
 
                 <!-- 按鈕 -->
                 <div class="FormBtm">

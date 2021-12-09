@@ -141,12 +141,20 @@ a:hover {
     background-color: chocolate;
   }
   #main #ContactBox {
-    width: 90vw;
     background-color: #ffbd9d;
   }
   #main #ContactBox #ContactTitle {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main #ContactBox form {
+    width: 90vw;
+  }
+  #main #ContactBox form > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    background-color: goldenrod;
   }
   #main #ContactBox form .E_mail2 {
     display: none;

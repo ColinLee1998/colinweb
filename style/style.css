@@ -154,7 +154,7 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     list-style-type: none;
-    background-color: goldenrod;
+    background-color: #fdd0b6;
   }
   #main #ContactBox form .E_mail2 {
     display: none;

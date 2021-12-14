@@ -190,6 +190,20 @@ footer {
 				}
 			}
 
+			%InputInBox {
+				width: $WPer *7.5;
+				height: 30px;
+				font-size: $Em * 1.1;
+				// 內間距
+				padding: {
+					left: 10px;
+				}
+				// 使用者輸入後會看到的樣式
+				color: darkblue;
+				// 文字的粗細
+				font-weight: 600;
+			}
+
 			// 子元素選擇器
 			> div {
 				@extend %PI;
@@ -205,7 +219,12 @@ footer {
 					@extend %TitlM;
 				}
 				> input {
-					width: $WPer * 7.5;
+					@extend %InputInBox;
+				}
+				// 偽類別，使用者觀看到的樣式
+				> input[type=text]::placeholder {
+					color: darkcyan;
+					font-weight: 600;
 				}
 			}
 
@@ -217,7 +236,7 @@ footer {
 					@extend %TitlM;
 				}
 				> input {
-					width: $WPer * 7.5;
+					@extend %InputInBox;
 				}
 			}
 

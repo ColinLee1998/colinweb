@@ -148,18 +148,44 @@ a:hover {
     padding-bottom: 10px;
   }
   #main #ContactBox form {
-    width: 70vw;
+    width: 75vw;
   }
   #main #ContactBox form > div {
     padding-top: 10px;
     padding-bottom: 10px;
-    list-style-type: none;
+    margin-bottom: 5px;
+  }
+  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .Text > label {
+    margin-bottom: 10px;
+  }
+  #main #ContactBox form > div {
+    font-size: 1.3em;
+  }
+  #main #ContactBox form > #NameBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #main #ContactBox form > #NameBox > label {
-    width: 100vw;
+    width: 100%;
   }
   #main #ContactBox form > #NameBox > input {
-    width: 70vw;
+    width: 75%;
+  }
+  #main #ContactBox form > .Mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Mail > label {
+    width: 100%;
+  }
+  #main #ContactBox form > .Mail > input {
+    width: 75%;
   }
   #main #ContactBox form > .Ques {
     display: -webkit-box;
@@ -170,7 +196,6 @@ a:hover {
   }
   #main #ContactBox form > .Ques > p {
     width: 100%;
-    margin-bottom: 15px;
   }
   #main #ContactBox form > .Ques > li {
     width: 50%;

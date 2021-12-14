@@ -158,8 +158,8 @@ footer {
 
 #main {
 	#ContactBox {
-		background-color: #ffbd9d;
 
+		background-image: url(../../images/bg/bg1.gif);
 		// 標題
 		#ContactTitle {
 			// 外間距 margin ；上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
@@ -243,7 +243,7 @@ footer {
 			}
 
 			> .Text {
-				> label {
+				> li {
 					width: $WPer * 10;
 					@extend %TitlM;
 				}

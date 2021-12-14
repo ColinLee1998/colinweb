@@ -148,13 +148,39 @@ a:hover {
     padding-bottom: 10px;
   }
   #main #ContactBox form {
-    width: 90vw;
+    width: 70vw;
   }
   #main #ContactBox form > div {
     padding-top: 10px;
     padding-bottom: 10px;
     list-style-type: none;
-    background-color: #fdd0b6;
+  }
+  #main #ContactBox form > #NameBox > label {
+    width: 100vw;
+  }
+  #main #ContactBox form > #NameBox > input {
+    width: 70vw;
+  }
+  #main #ContactBox form > .Ques {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Ques > p {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #main #ContactBox form > .Ques > li {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  #main #ContactBox form > .Text > label {
+    width: 100%;
+  }
+  #main #ContactBox form > .Text > textarea {
+    width: 95%;
   }
   #main #ContactBox form .E_mail2 {
     display: none;

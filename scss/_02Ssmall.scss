@@ -103,7 +103,8 @@ footer {
 	.HRLine {
 		// 上邊界與下邊界，讓 main 與 footer 有點區隔
 		margin: {
-			top: 15px;
+			// 減少空白
+			// top: 15px;
 			bottom: 15px;
 		};
 	}
@@ -172,7 +173,7 @@ footer {
 		form {
 
 			// 寬度 左右留白
-			width: $W1 * 7.5;
+			width: $W1 * 8;
 			// 繼承 單獨為表單使用
 			%PI {
 				padding: {
@@ -191,9 +192,9 @@ footer {
 			}
 
 			%InputInBox {
-				width: $WPer *7.5;
+				width: $WPer * 10;
 				height: 30px;
-				font-size: $Em * 1.1;
+				font-size: $Em;
 				// 內間距
 				padding: {
 					left: 10px;
@@ -207,7 +208,7 @@ footer {
 			// 子元素選擇器
 			> div {
 				@extend %PI;
-				font-size: $Em * 1.3;
+				font-size: $Em * 1.2;
 			}
 
 			> #NameBox {
@@ -223,8 +224,8 @@ footer {
 				}
 				// 偽類別，使用者觀看到的樣式
 				> input[type=text]::placeholder {
-					color: darkcyan;
-					font-weight: 600;
+					// color: darkcyan;
+					// font-weight: 600;
 				}
 			}
 
@@ -258,16 +259,49 @@ footer {
 					margin: {
 						bottom: 15px;
 					}
+					text-align: center;
 				}
 			}
 
-			> .Text {
+			> .TextArea {
 				> li {
 					width: $WPer * 10;
 					@extend %TitlM;
 				}
 				> textarea {
-					width: $WPer * 9.5;
+					width: $WPer * 10;
+					font-size: $Em;
+				}
+			}
+
+			> .FormBtm {
+				width: $WPer * 10;
+				display: flex;
+
+				> input[type=submit] {
+					width: 100px;
+					height: 35px;
+					font-size: $Em * 0.9;
+					order: 2;
+					color: white;
+					// 按鈕平面化，邊框線段為 0 
+					border: 0;
+					// 圓角
+					border-radius: 15px;
+					background-color: rgb(238, 17, 1);
+				}
+
+				> input[type=reset] {
+					width: 100px;
+					height: 35px;
+					font-size: $Em * 0.9;
+					order: 1;
+					color: white;
+					// 按鈕平面化，邊框線段為 0 
+					border: 0;
+					// 圓角
+					border-radius: 15px;
+					background-color: rgb(9, 107, 236);
 				}
 			}
 

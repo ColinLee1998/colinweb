@@ -151,7 +151,7 @@ a:hover {
   }
   #main #ContactBox form > div {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-bottom: 5px;
   }
   #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .TextArea > li {
@@ -177,6 +177,18 @@ a:hover {
   }
   #main #ContactBox form > #NameBox > label {
     width: 100%;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::-webkit-input-placeholder {
+    color: gray;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]:-ms-input-placeholder {
+    color: gray;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::-ms-input-placeholder {
+    color: gray;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::placeholder {
+    color: gray;
   }
   #main #ContactBox form > .Mail {
     display: -webkit-box;

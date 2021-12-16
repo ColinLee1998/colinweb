@@ -178,7 +178,8 @@ footer {
 			%PI {
 				padding: {
 					top: 10px;
-					bottom: 10px;
+					// 表單與頁尾之間的距離
+					bottom: 15px;
 				};
 				margin: {
 					bottom: 5px;
@@ -224,7 +225,7 @@ footer {
 				}
 				// 偽類別，使用者觀看到的樣式
 				> input[type=text]::placeholder {
-					// color: darkcyan;
+					color: gray;
 					// font-weight: 600;
 				}
 			}

@@ -561,12 +561,118 @@ a:hover {
     width: 100vw;
     overflow-x: auto;
   }
-  #main article {
-    width: 100vw;
-    height: 650px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-block-color: tomato;
+  #main #ContactBox {
+    background-image: url(../../images/bg/bg1.gif);
+  }
+  #main #ContactBox #ContactTitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main #ContactBox form {
+    width: 53vw;
+  }
+  #main #ContactBox form > div {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+  }
+  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .TextArea > li {
+    margin-bottom: 10px;
+  }
+  #main #ContactBox form > #NameBox > input, #main #ContactBox form > .Mail > input {
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    padding-left: 10px;
+    color: darkblue;
+    font-weight: 600;
+  }
+  #main #ContactBox form > .FormBtm > input[type=submit], #main #ContactBox form > .FormBtm > input[type=reset] {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9em;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+  }
+  #main #ContactBox form > div {
+    font-size: 1.2em;
+  }
+  #main #ContactBox form > #NameBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > #NameBox > label {
+    width: 100%;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::-webkit-input-placeholder {
+    color: gray;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]:-ms-input-placeholder {
+    color: gray;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::-ms-input-placeholder {
+    color: gray;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::placeholder {
+    color: gray;
+  }
+  #main #ContactBox form > .Mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Mail > label {
+    width: 100%;
+  }
+  #main #ContactBox form > .Ques {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Ques > p {
+    width: 100%;
+  }
+  #main #ContactBox form > .Ques > li {
+    width: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  #main #ContactBox form > .TextArea > li {
+    width: 100%;
+  }
+  #main #ContactBox form > .TextArea > textarea {
+    width: 100%;
+    font-size: 1em;
+  }
+  #main #ContactBox form > .FormBtm {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
+  #main #ContactBox form > .FormBtm > input[type=submit] {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background-color: #ee1101;
+  }
+  #main #ContactBox form > .FormBtm > input[type=reset] {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background-color: #096bec;
+  }
+  #main #ContactBox form .E_mail2 {
+    display: none;
   }
 }
 

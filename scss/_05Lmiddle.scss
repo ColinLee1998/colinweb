@@ -65,16 +65,170 @@ header {
 	}
 }
 
-#main {
-	article {
-		width: $W10;
-		height: 650px;
-		// 框線 線段粗細 線段樣式 線段顏色
-		border-bottom-width: 2px;
-		border-bottom-style: solid;
-		border-block-color: tomato;
-	}
+footer {
+
 }
 
-footer {
+#main {
+	// article {
+	// 	width: $W10;
+	// 	height: 650px;
+	// 	// 框線 線段粗細 線段樣式 線段顏色
+	// 	border-bottom-width: 2px;
+	// 	border-bottom-style: solid;
+	// 	border-block-color: tomato;
+	// }
+	#ContactBox {
+
+		background-image: url(../../images/bg/bg1.gif);
+		// 標題
+		#ContactTitle {
+			// 外間距 margin ；上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
+			padding: {
+				top: 10px;
+				bottom: 10px;
+			}
+		}
+
+		form {
+
+			// 寬度 左右留白
+			width: $W1 * 5.3;
+			// 繼承 單獨為表單使用
+			%PI_Lm {
+				padding: {
+					top: 10px;
+					// 表單與頁尾之間的距離
+					bottom: 15px;
+				};
+				margin: {
+					bottom: 5px;
+				}
+			}
+
+			%TitlM_Lm {
+				margin: {
+					bottom: 10px;
+				}
+			}
+
+			%InputInBox_Lm {
+				width: $WPer * 10;
+				height: 30px;
+				font-size: $Em;
+				// 內間距
+				padding: {
+					left: 10px;
+				}
+				// 使用者輸入後會看到的樣式
+				color: darkblue;
+				// 文字的粗細
+				font-weight: 600;
+			}
+
+			%BtnSR_Lm {
+				width: 100px;
+				height: 35px;
+				font-size: $Em * 0.9;
+				color: white;
+				// 按鈕平面化，邊框線段為 0 
+				border: 0;
+				// 圓角
+				border-radius: 15px;
+			}
+
+			// 子元素選擇器
+			> div {
+				@extend %PI_Lm;
+				font-size: $Em * 1.2;
+			}
+
+			> #NameBox {
+				// 彈性佈局
+				display: flex;
+				flex-wrap: wrap;
+				> label {
+					width: $WPer * 10;
+					@extend %TitlM_Lm;
+				}
+				> input {
+					@extend %InputInBox_Lm;
+				}
+				// 偽類別，使用者觀看到的樣式
+				> input[type=text]::placeholder {
+					color: gray;
+					// font-weight: 600;
+				}
+			}
+
+			> .Mail {
+				display: flex;
+				flex-wrap: wrap;
+				> label {
+					width: $WPer * 10;
+					@extend %TitlM_Lm;
+				}
+				> input {
+					@extend %InputInBox_Lm;
+				}
+			}
+
+			> .Ques {
+				// 彈性佈局
+				display: flex;
+				// 換行
+				flex-wrap: wrap;
+
+				> p {
+					// 寬度
+					width: $WPer * 10;
+					// 外間距
+					@extend %TitlM_Lm;
+				}
+				> li {
+					// 寬度
+					width: $WPer * 5;
+					margin: {
+						bottom: 15px;
+					}
+					text-align: center;
+				}
+			}
+
+			> .TextArea {
+				> li {
+					width: $WPer * 10;
+					@extend %TitlM_Lm;
+				}
+				> textarea {
+					width: $WPer * 10;
+					font-size: $Em;
+				}
+			}
+
+			> .FormBtm {
+				width: $WPer * 10;
+				display: flex;
+				margin:  {
+					bottom: 0;
+				}
+
+				> input[type=submit] {
+					@extend %BtnSR_Lm;
+					order: 2;
+					background-color: rgb(238, 17, 1);
+				}
+
+				> input[type=reset] {
+					@extend %BtnSR_Lm;
+					order: 1;
+					background-color: rgb(9, 107, 236);
+				}
+			}
+
+			.E_mail2 {
+				@include DN;
+			}
+		}
+	}
 }

@@ -55,4 +55,13 @@ header {
 }
 
 footer {
+
+}
+
+#main {
+	> #ContactBox {
+		> form {
+			width: $WPer * 4.5;
+		}
+	}
 }

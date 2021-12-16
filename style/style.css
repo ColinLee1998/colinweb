@@ -768,5 +768,8 @@ a:hover {
   header nav #Menu {
     display: none;
   }
+  #main > #ContactBox > form {
+    width: 45%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

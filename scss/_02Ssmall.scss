@@ -6,6 +6,11 @@ header {
 		width: $NW;
 		// 設定 手機版的導覽列 63行，定位點與階層語法，被 nav 的高度設定給抵消，所以才隱藏 nav 的高度
 		// height: $NH;
+
+		// 停佇在畫面上方，不隨著畫面滑動而消失
+		position: fixed;
+		top: 0;
+		
 		color: #bb3d00;
 		background-color: #ffbd9d;
 		// 指向清單物件 li

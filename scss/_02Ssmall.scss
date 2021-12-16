@@ -1,5 +1,10 @@
 // scss 巢狀語法
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
+
+#Top {
+	@include Dn;
+}
+
 header {
 	nav {
 		// Nav 的寬度變數傳回

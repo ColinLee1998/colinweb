@@ -206,6 +206,17 @@ footer {
 				font-weight: 600;
 			}
 
+			%BtnSR {
+				width: 100px;
+				height: 35px;
+				font-size: $Em * 0.9;
+				color: white;
+				// 按鈕平面化，邊框線段為 0 
+				border: 0;
+				// 圓角
+				border-radius: 15px;
+			}
+
 			// 子元素選擇器
 			> div {
 				@extend %PI;
@@ -278,30 +289,19 @@ footer {
 			> .FormBtm {
 				width: $WPer * 10;
 				display: flex;
+				margin:  {
+					bottom: 0;
+				}
 
 				> input[type=submit] {
-					width: 100px;
-					height: 35px;
-					font-size: $Em * 0.9;
+					@extend %BtnSR;
 					order: 2;
-					color: white;
-					// 按鈕平面化，邊框線段為 0 
-					border: 0;
-					// 圓角
-					border-radius: 15px;
 					background-color: rgb(238, 17, 1);
 				}
 
 				> input[type=reset] {
-					width: 100px;
-					height: 35px;
-					font-size: $Em * 0.9;
+					@extend %BtnSR;
 					order: 1;
-					color: white;
-					// 按鈕平面化，邊框線段為 0 
-					border: 0;
-					// 圓角
-					border-radius: 15px;
 					background-color: rgb(9, 107, 236);
 				}
 			}

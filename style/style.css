@@ -94,11 +94,10 @@ a:hover {
     font-size: 1.8em;
     text-align: center;
     line-height: 60px;
-    top: 195px;
+    top: 33.85417%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: aquamarine;
   }
   header #BannerBox > .Arrow > .Larrow {
     width: 7%;

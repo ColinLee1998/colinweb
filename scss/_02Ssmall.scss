@@ -105,9 +105,8 @@ header {
 			// 垂直置中
 			line-height: 60px;
 			// 往中間設定
-			top: 160px + 65px -30px;
+			top: 195 / 576 * 100%;
 			display: flex;
-			background-color: aquamarine;
 
 			> .Larrow {
 				width: $WPer * 0.7;

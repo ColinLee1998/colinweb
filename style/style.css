@@ -284,6 +284,60 @@ a:hover {
   #main #ContactBox form .E_mail2 {
     display: none;
   }
+  @-webkit-keyframes move {
+    0%,
+    15% {
+      -webkit-transform: translate(0%);
+              transform: translate(0%);
+    }
+    20%,
+    35% {
+      -webkit-transform: translate(-100%);
+              transform: translate(-100%);
+    }
+    40%,
+    55% {
+      -webkit-transform: translate(-200%);
+              transform: translate(-200%);
+    }
+    60%,
+    75% {
+      -webkit-transform: translate(-300%);
+              transform: translate(-300%);
+    }
+    80%,
+    95% {
+      -webkit-transform: translate(-400%);
+              transform: translate(-400%);
+    }
+  }
+  @keyframes move {
+    0%,
+    15% {
+      -webkit-transform: translate(0%);
+              transform: translate(0%);
+    }
+    20%,
+    35% {
+      -webkit-transform: translate(-100%);
+              transform: translate(-100%);
+    }
+    40%,
+    55% {
+      -webkit-transform: translate(-200%);
+              transform: translate(-200%);
+    }
+    60%,
+    75% {
+      -webkit-transform: translate(-300%);
+              transform: translate(-300%);
+    }
+    80%,
+    95% {
+      -webkit-transform: translate(-400%);
+              transform: translate(-400%);
+    }
+  }
 }
 
 @media screen and (min-width: 576px) {

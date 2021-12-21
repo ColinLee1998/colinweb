@@ -136,7 +136,7 @@ header {
 		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;
-			// 呼叫動畫 動畫名稱 總秒數 動畫樣式
+			// 呼叫動畫 動畫名稱 總秒數 播放次數(無限播放)
 			animation: move 25s infinite;
 			.SmallImg {
 				width: 100vw;

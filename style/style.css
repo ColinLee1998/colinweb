@@ -114,6 +114,8 @@ a:hover {
   }
   header #BannerBox .ImgBox {
     width: 500vw;
+    -webkit-animation: move 25s infinite;
+            animation: move 25s infinite;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;

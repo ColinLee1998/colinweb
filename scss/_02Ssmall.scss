@@ -88,6 +88,32 @@ header {
 		margin: {
 			top: $NH;
 		}
+
+		// 輪播圖左右按鈕
+		> .BtnBox {
+			width: $WPer * 10;
+			// 相對定位
+			position: absolute;
+			// 層級
+			z-index: 10;
+			// 文字尺寸
+			font-size: $Em * 1.8;
+			display: flex;
+			background-color: aquamarine;
+
+			> .LeftBox {
+				width: $WPer * 0.7;
+				height: 60px;
+				background-color: white;
+			}
+
+			> .RightBox {
+				width: $WPer * 0.7;
+				height: 60px;
+				background-color: salmon;
+			}
+		}
+
 		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;

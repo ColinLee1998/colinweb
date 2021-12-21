@@ -108,16 +108,22 @@ header {
 			top: 195 / 576 * 100%;
 			display: flex;
 
-			> .Larrow {
-				width: $WPer * 0.7;
-				height: 60px;
-				background-color: white;
+			> .arrow {
+				width: $WPer * 0.6;
+				height: 80px;
+				// 圓角矩形
+				border-radius: 20px;
+				background-color: slategray;
+			}
+
+			> .Larrow {	
+				// 外間距靠左
+				margin-left: 10px;
 			}
 
 			> .RightBox {
-				width: $WPer * 0.7;
-				height: 60px;
-				background-color: salmon;
+				// 外間距靠右
+				margin-right: 10px;
 			}
 		}
 

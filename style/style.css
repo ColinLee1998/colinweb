@@ -99,15 +99,17 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+  header #BannerBox > .Arrow > .arrow {
+    width: 6%;
+    height: 80px;
+    border-radius: 20px;
+    background-color: slategray;
+  }
   header #BannerBox > .Arrow > .Larrow {
-    width: 7%;
-    height: 60px;
-    background-color: white;
+    margin-left: 10px;
   }
   header #BannerBox > .Arrow > .RightBox {
-    width: 7%;
-    height: 60px;
-    background-color: salmon;
+    margin-right: 10px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;

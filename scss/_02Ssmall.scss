@@ -2,7 +2,7 @@
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
 
 #Top {
-	@include Dn;
+	@include DN;
 }
 
 header {
@@ -15,6 +15,8 @@ header {
 		// 停佇在畫面上方，不隨著畫面滑動而消失
 		position: fixed;
 		top: 0;
+		// 設定階層
+		z-index: 999;
 
 		color: #bb3d00;
 		background-color: #ffbd9d;
@@ -71,7 +73,7 @@ header {
 		height: 100vh;
 		// 定位點 絕對定位 設定階層
 		position: absolute;
-		z-index: 10;
+		z-index: 9999;
 		display: none;
 		background-color: tomato;
 		text-decoration: none;
@@ -90,18 +92,24 @@ header {
 		}
 
 		// 輪播圖左右按鈕
-		> .BtnBox {
+		> .Arrow {
 			width: $WPer * 10;
 			// 相對定位
 			position: absolute;
 			// 層級
-			z-index: 10;
+			z-index: 5;
 			// 文字尺寸
 			font-size: $Em * 1.8;
+			// 水平置中
+			text-align: center;
+			// 垂直置中
+			line-height: 60px;
+			// 往中間設定
+			top: 160px + 65px -30px;
 			display: flex;
 			background-color: aquamarine;
 
-			> .LeftBox {
+			> .Larrow {
 				width: $WPer * 0.7;
 				height: 60px;
 				background-color: white;

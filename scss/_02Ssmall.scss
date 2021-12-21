@@ -105,7 +105,7 @@ header {
 			// 垂直置中
 			line-height: 60px;
 			// 往中間設定
-			top: 195 / 576 * 100%;
+			top: ((576 / 2) - (80 / 2)) / 576 * 100%;
 			display: flex;
 
 			> .arrow {
@@ -121,7 +121,7 @@ header {
 				margin-left: 10px;
 			}
 
-			> .RightBox {
+			> .Rarrow {
 				// 外間距靠右
 				margin-right: 10px;
 			}

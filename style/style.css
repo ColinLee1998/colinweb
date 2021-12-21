@@ -94,7 +94,7 @@ a:hover {
     font-size: 1.8em;
     text-align: center;
     line-height: 60px;
-    top: 33.85417%;
+    top: 43.05556%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -108,7 +108,7 @@ a:hover {
   header #BannerBox > .Arrow > .Larrow {
     margin-left: 10px;
   }
-  header #BannerBox > .Arrow > .RightBox {
+  header #BannerBox > .Arrow > .Rarrow {
     margin-right: 10px;
   }
   header #BannerBox .ImgBox {

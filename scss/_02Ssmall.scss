@@ -91,6 +91,8 @@ header {
 			top: $NH;
 		}
 
+		// 相對定位 (移動物件的定位點) -- 重新定位
+
 		// 輪播圖左右按鈕
 		> .Arrow {
 			width: $WPer * 10;
@@ -104,8 +106,12 @@ header {
 			text-align: center;
 			// 垂直置中
 			line-height: 80px;
-			// 往中間設定
-			top: ((576 / 2) - (80 / 2)) / 576 * 100%;
+			// 設定為 50% 位置
+			top: 50%;
+			// 外間距
+			margin: {
+				top: -40px;
+			}
 			display: flex;
 
 			> .arrow {

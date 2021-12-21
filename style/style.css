@@ -94,7 +94,8 @@ a:hover {
     font-size: 1.8em;
     text-align: center;
     line-height: 80px;
-    top: 43.05556%;
+    top: 50%;
+    margin-top: -40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

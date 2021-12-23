@@ -83,6 +83,50 @@ header {
 		margin: {
 			top: $NH;
 		}
+
+		// 相對定位 (移動物件的定位點) -- 重新定位
+
+		// 輪播圖左右按鈕
+		> .Arrow {
+			width: $WPer * 10;
+			// 相對定位
+			position: absolute;
+			// 層級
+			z-index: 5;
+			// 文字尺寸
+			font-size: $Em * 1.8;
+			// 水平置中
+			text-align: center;
+			// 垂直置中
+			line-height: 120px;
+			// 設定為 50% 位置
+			top: 50%;
+			// 外間距
+			margin: {
+				top: -60px;
+			}
+			display: flex;
+
+			> .arrow {
+				width: $WPer * 0.6;
+				height: 120px;
+				// 圓角矩形
+				border-radius: 20px;
+				background-color: slategray;
+				// 定位點 停佇
+				position: fixed;
+			}
+
+			> .Larrow {	
+				// 靠左
+				left: 10px;
+			}
+
+			> .Rarrow {
+				// 靠右
+				right: 10px;
+			}
+		}
 		
 		.ImgBox {
 			// 圖片框的寬度尺寸

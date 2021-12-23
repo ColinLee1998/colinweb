@@ -708,6 +708,10 @@ a:hover {
     width: 2.5%;
     height: 120px;
   }
+  header #BannerBox > .ImgBox:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
   #main #ContactBox {
     background-image: url(../../images/bg/bg1.gif);
   }

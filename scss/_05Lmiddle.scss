@@ -97,6 +97,11 @@ header {
 				height: 120px;
 			}
 		}
+
+		> .ImgBox:hover {
+			// 暫停輪播
+			animation-play-state: paused;
+		}
 	}
 }
 

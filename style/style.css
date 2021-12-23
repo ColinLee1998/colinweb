@@ -105,21 +105,26 @@ a:hover {
     height: 80px;
     border-radius: 20px;
     background-color: slategray;
+    position: fixed;
   }
   header #BannerBox > .Arrow > .Larrow {
-    margin-left: 10px;
+    left: 10px;
   }
   header #BannerBox > .Arrow > .Rarrow {
-    margin-right: 10px;
+    right: 10px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
-    -webkit-animation: move 25s infinite;
-            animation: move 25s infinite;
+    -webkit-animation: move 25s infinite alternate;
+            animation: move 25s infinite alternate;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
     float: left;
+  }
+  header #BannerBox .ImgBox > .SmallImg:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }
   footer .HRLine {
     margin-bottom: 15px;
@@ -390,9 +395,35 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow: hidden;
     background-color: cornflowerblue;
     margin-top: 65px;
+  }
+  header #BannerBox > .Arrow {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 120px;
+    top: 50%;
+    margin-top: -60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    width: 6%;
+    height: 120px;
+    border-radius: 20px;
+    background-color: slategray;
+    position: fixed;
+  }
+  header #BannerBox > .Arrow > .Larrow {
+    left: 10px;
+  }
+  header #BannerBox > .Arrow > .Rarrow {
+    right: 10px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
@@ -601,10 +632,12 @@ a:hover {
   header nav #Contact {
     display: none;
   }
-  header #BannerBox {
-    width: 100vw;
-    overflow-x: auto;
-    background-color: cornflowerblue;
+  header #BannerBox > .Arrow {
+    line-height: 140px;
+    margin-top: -70px;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    height: 140px;
   }
 }
 
@@ -664,8 +697,16 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow: hidden;
     margin-top: 0;
+  }
+  header #BannerBox > .Arrow {
+    line-height: 120px;
+    margin-top: -60px;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    width: 2.5%;
+    height: 120px;
   }
   #main #ContactBox {
     background-image: url(../../images/bg/bg1.gif);
@@ -823,8 +864,16 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow: hidden;
     background-color: cornflowerblue;
+  }
+  header #BannerBox > .Arrow {
+    line-height: 120px;
+    margin-top: -60px;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    width: 2%;
+    height: 120px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;

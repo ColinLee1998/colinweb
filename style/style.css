@@ -83,19 +83,20 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow: hidden;
     background-color: cornflowerblue;
     margin-top: 65px;
+    position: relative;
   }
   header #BannerBox > .Arrow {
     width: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 15;
     font-size: 1.8em;
     text-align: center;
     line-height: 80px;
     top: 50%;
-    margin-top: -40px;
+    margin-top: -60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -129,6 +130,21 @@ a:hover {
   header #BannerBox .ImgBox > .SmallImg:hover {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
+  }
+  header #BannerBox > .Controls_Visible {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    bottom: 12px;
+  }
+  header #BannerBox > .Controls_Visible label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
   }
   footer .HRLine {
     margin-bottom: 15px;

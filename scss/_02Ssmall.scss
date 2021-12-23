@@ -120,16 +120,18 @@ header {
 				// 圓角矩形
 				border-radius: 20px;
 				background-color: slategray;
+				// 定位點 停佇
+				position: fixed;
 			}
 
 			> .Larrow {	
-				// 外間距靠左
-				margin-left: 10px;
+				// 靠左
+				left: 10px;
 			}
 
 			> .Rarrow {
-				// 外間距靠右
-				margin-right: 10px;
+				// 靠右
+				right: 10px;
 			}
 		}
 

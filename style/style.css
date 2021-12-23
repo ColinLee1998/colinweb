@@ -113,6 +113,10 @@ a:hover {
   header #BannerBox > .Arrow > .Rarrow {
     right: 10px;
   }
+  header #BannerBox > .RadioBox {
+    position: absolute;
+    z-index: 10;
+  }
   header #BannerBox .ImgBox {
     width: 500vw;
     -webkit-animation: move 25s infinite alternate;

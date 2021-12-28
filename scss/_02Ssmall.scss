@@ -138,8 +138,93 @@ header {
 
 		// 單選紐
 		> .RadioBox {
+			width: $WPer * 10;
 			position: absolute;
 			z-index: 10;
+			bottom: 12px;
+
+			> input {
+					@include DN;
+				};
+
+			// 控制按鈕
+			> .Controls_Visible {
+				position: absolute;
+				width: $W1 * 10;
+				text-align: center;
+				bottom: 12px;
+
+				label {
+					// 顯示方式 行內區塊
+					display: inline-block;
+					// 寬度與高度 同數值為正
+					width: 10px;
+					height: 10px;
+					// 物件的左右間距
+					margin: 0 5px;
+					// 背景顏色
+					background-color: white;
+					// 圓角 正圓
+					border-radius: 50%;
+					// 框線
+					border: 2px solid white;
+				}
+			}
+
+			// 轉換控制按鈕顏色 「~」連結同層元素，形成連動
+			> input[type="radio"]:nth-of-type(1):checked
+			~ .Controls_Visible
+			label:nth-of-type(1) {
+				background-color: darkslategray;
+			}
+
+			> input[type="radio"]:nth-of-type(2):checked
+			~ .Controls_Visible
+			label:nth-of-type(2) {
+				background-color: darkslategray;
+			}
+
+			> input[type="radio"]:nth-of-type(3):checked
+			~ .Controls_Visible
+			label:nth-of-type(3) {
+				background-color: darkslategray;
+			}
+
+			> input[type="radio"]:nth-of-type(4):checked
+			~ .Controls_Visible
+			label:nth-of-type(4) {
+				background-color: darkslategray;
+			}
+
+			> input[type="radio"]:nth-of-type(5):checked
+			~ .Controls_Visible
+			label:nth-of-type(5) {
+				background-color: darkslategray;
+			}
+		}
+
+		// 控制按鈕
+		> .Controls_Visible {
+			position: absolute;
+			width: $W1 * 10;
+			text-align: center;
+			bottom: 12px;
+
+			label {
+				// 顯示方式 行內區塊
+				display: inline-block;
+				// 寬度與高度 同數值為正
+				width: 10px;
+				height: 10px;
+				// 物件的左右間距
+				margin: 0 5px;
+				// 背景顏色
+				background-color: white;
+				// 圓角 正圓
+				border-radius: 50%;
+				// 框線
+				border: 2px solid white;
+			}
 		}
 
 		.ImgBox {
@@ -171,29 +256,6 @@ header {
 			// }
 		}
 
-		// 控制按鈕
-		> .Controls_Visible {
-			position: absolute;
-			width: $W1 * 10;
-			text-align: center;
-			bottom: 12px;
-
-			label {
-				// 顯示方式 行內區塊
-				display: inline-block;
-				// 寬度與高度 同數值為正
-				width: 10px;
-				height: 10px;
-				// 物件的左右間距
-				margin: 0 5px;
-				// 背景顏色
-				background-color: white;
-				// 圓角 正圓
-				border-radius: 50%;
-				// 框線
-				border: 2px solid white;
-			}
-		}
 	}
 }
 

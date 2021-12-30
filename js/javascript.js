@@ -20,3 +20,9 @@ document.write("<br>" + "將數值比例放大" + b1);
 // 2. 內建函數 toFixed 強制取到小數點的指定位數
 var c = (0.1 + 0.2);
 document.write("<br>" + c.toFixed(3));
+
+// 字串 用 雙引號「"」 或 單引號「'」 框住的字元
+var string = "測試";
+var mystring = "文章";
+var SmS = string + mystring;
+document.write("<br>" + SmS.length);

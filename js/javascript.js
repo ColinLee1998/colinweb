@@ -32,3 +32,8 @@ document.write("<br>" + SmS.length);
 // 其他值為 1
 document.write("<br> Boolean(0)" + Boolean(NaN));
 document.write("<br> Boolean(123" + Boolean(123));
+
+// 未定義(undefined) 變數沒有被宣告；或是宣告變數但沒給值
+var x;
+y = 1; // 設定名稱，給予值，javascript 會將其轉換為變數
+document.write("<br>" + y);

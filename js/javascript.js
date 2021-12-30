@@ -56,3 +56,5 @@ document.write("<br> f = 123 &nbsp;" + ff);
 // 2. 無意義的運算 0除以0
 document.write("<br>" + 0 / 0);
 
+// Infinity 無限大 被除數(10) / 除數(0)；被除數為任意數字(除了 0 以外)  / 除數(0) = 無限大
+document.write("<br>" + -10 / 0);

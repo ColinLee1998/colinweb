@@ -26,3 +26,9 @@ var string = "測試";
 var mystring = "文章";
 var SmS = string + mystring;
 document.write("<br>" + SmS.length);
+
+// 布林(boolean) 只有兩種值，true(1)與false(0)
+// false、0、空字串("") or ('')、NaN、null、未定義(undefined)；布林值都為 false(0)
+// 其他值為 1
+document.write("<br> Boolean(0)" + Boolean(NaN));
+document.write("<br> Boolean(123" + Boolean(123));

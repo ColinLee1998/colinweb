@@ -72,3 +72,14 @@ function cal() {
 
 cal();
 document.write("<br>" + AA);
+
+var a = 2; //全域變數
+function cal() {
+    // 連續宣告變數
+    // a = 5, B; 宣告變數給予值時，可以不用 var 定義；宣告變數不予值時，需要用 var 定義才會成立
+    a = 5, b = 1; // 全域變數
+    document.write("<br> a + b = " + (a + b));
+}
+
+cal();
+document.write("<br>" + a);

@@ -43,3 +43,12 @@ var z = 2;
 document.write("<br>" + z);
 z = null;
 document.write("<br>" + z);
+
+// NaN 無效的數字 轉換類別 1. 字串轉為數字
+var F = "a";
+var f = "123";
+FF = Number(F);
+ff = Number(f);
+
+document.write("<br> F = a &nbsp;" + FF);
+document.write("<br> f = 123 &nbsp;" + ff);

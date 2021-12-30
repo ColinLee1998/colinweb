@@ -18,6 +18,5 @@ var b1 = (0.1 * 10 + 0.2 * 10) / 10;
 document.write("<br>" + "將數值比例放大" + b1);
 
 // 2. 內建函數 toFixed 強制取到小數點的指定位數
-var b2 = 0.1 + 0.2;
-b2.toFixed(1);
-document.write("<br>" + b2);
+var c = (0.1 + 0.2);
+document.write("<br>" + c.toFixed(3));

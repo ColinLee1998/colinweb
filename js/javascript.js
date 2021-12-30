@@ -58,3 +58,17 @@ document.write("<br>" + 0 / 0);
 
 // Infinity 無限大 被除數(10) / 除數(0)；被除數為任意數字(除了 0 以外)  / 除數(0) = 無限大
 document.write("<br>" + -10 / 0);
+
+// 宣告變數 var ES6 let const(常數)
+// var 宣告的作用域
+// 1. 全域變數: 不在函數內宣告，在此程式文件內都有作用  2. 區域變數: 在函數宣告，只對於目前宣告的函數有作用
+// 自定義函數 function name() {程式碼};
+var AA = 2; // 全域變數
+function cal() {
+    // 連續宣告變數
+    var AA = 5, b = 1; // 區域變數
+    document.write("<br> a + b = " + (AA + b));
+}
+
+cal();
+document.write("<br>" + AA);

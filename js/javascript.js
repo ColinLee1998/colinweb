@@ -37,3 +37,9 @@ document.write("<br> Boolean(123" + Boolean(123));
 var x;
 y = 1; // 設定名稱，給予值，javascript 會將其轉換為變數
 document.write("<br>" + y);
+
+// 空值null 清除變數內的值
+var z = 2;
+document.write("<br>" + z);
+z = null;
+document.write("<br>" + z);

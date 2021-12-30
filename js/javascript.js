@@ -83,3 +83,19 @@ function cal() {
 
 cal();
 document.write("<br>" + a);
+
+// let 宣告的作用域 會因 { 區塊敘述 } 而分別定義為 全域或區域 的型態
+
+var a = 5, b = 0;
+let x = 2, y = 0;
+{
+    var c= a + b;
+    let z= x + y;
+}
+// 測試可用 控制台 呼叫
+console.log("c=", c);
+console.log("z=", z);
+
+// var 的全域與區域作用，只存在 function (函數) 之內
+// { 區塊敘述 } if、else、for、while
+// 判斷式 if {} else {}

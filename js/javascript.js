@@ -52,3 +52,7 @@ ff = Number(f);
 
 document.write("<br> F = a &nbsp;" + FF);
 document.write("<br> f = 123 &nbsp;" + ff);
+
+// 2. 無意義的運算 0除以0
+document.write("<br>" + 0 / 0);
+

@@ -132,12 +132,21 @@ let TestName = document.getElementById('TestBox');
 login();
 // 方法
 function login() {
-    let Ans = window.prompt('請輸入帳號');
 
-    if ( Ans == '1234') {
-        console.log(Ans);
+    // 區域變數
+    let Ans = window.prompt('請輸入帳號');
+    let Number;
+
+    if ( Ans == 'Colin') {
+        //console.log(Ans);
+        Number = window.prompt('請輸入密碼');
+
+        if ( Number == '12345') {
+            TestName.textContent = "歡迎進入系統";
+        }
     } else {
         Ans = "帳號密碼輸入錯誤!";
-        console.log(Ans);
+        // console.log(Ans);
+        TestName.textContent = Ans;
     }
 }

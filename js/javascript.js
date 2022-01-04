@@ -161,8 +161,13 @@ function TimeItem() {
     // 判斷式 1. 早上 9 點 和 (||) 下午 3 點，顯示「現在買 1 送 1 喔!」
     // 2. 晚上 7 點之後到晚上 9 點前，顯示「所有商品 7 折，特價品除外」
     // 3. 其他時間顯示「歡迎團購商品!」
+    // 多條件判斷式 if(條件){成立} else if(條件){成立} else{上述條件都不成立}
 
     if (hour == 9 || hour == 15) {
         TestName.textContent = "現在買 1 送 1 喔!";
+    } else if (hour => 19 && hour < 21) {
+        TestName.textContent = "所有商品 7 折，特價品除外";
+    } else {
+        TestName.textContent = "歡迎團購商品!";
     }
 }

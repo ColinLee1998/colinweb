@@ -122,9 +122,17 @@ function WinCon() {
 // 帳密登入邏輯
 // 1. 設定變數，只依靠window.prompt的一個輸入框，故只設定一個變數即可
 // 2. 判斷式 變數值 與 輸入值 比對(==)；相同才會顯示資料；比對(==)，只要輸入的資料相同即可通過
-let Ans = window.prompt('請輸入帳號:');
 
-if (Ans == '1234') {
-    console.log(Ans);
+// 呼叫方法
+login();
+// 方法
+function login() {
+    let Ans = window.prompt('請輸入帳號');
+
+    if ( Ans == '1234') {
+        console.log(Ans);
+    } else {
+        Ans = "帳號密碼輸入錯誤!";
+        console.log(Ans);
+    }
 }
-

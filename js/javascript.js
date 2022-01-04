@@ -123,6 +123,11 @@ function WinCon() {
 // 1. 設定變數，只依靠window.prompt的一個輸入框，故只設定一個變數即可
 // 2. 判斷式 變數值 與 輸入值 比對(==)；相同才會顯示資料；比對(==)，只要輸入的資料相同即可通過
 
+// 全域變數
+let TestName = document.getElementById('TestBox');
+
+// 全域變數需設定在方法之上，不然會呼叫不到。
+
 // 呼叫方法
 login();
 // 方法

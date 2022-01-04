@@ -105,12 +105,18 @@ document.getElementById('TestBox').textContent="1234";
 // 確認對話框 '提示訊息'
 // window.confirm('繼續請按確定，退出請按取消');
 
-// 條件分支 if
-if (window.confirm('繼續請按確定，退出請按取消')) {
-    // 控制台訊息
-    console.log('確定');
-} else {
-    console.log('已取消');
+// 條件分支 if(條件){成立時執行的動作}else{不成立時執行的動作}
+// 如果沒有「不成立」時要執行的動作，可以省略 else 不寫
+// 方法
+function WinCon() {
+    if (window.confirm('繼續請按確定，退出請按取消')) {
+        // 控制台訊息
+        console.log('確定');
+        document.getElementById('TextBox').textContent = "確定";
+    } else {
+        console.log('已取消');
+        document.getElementById('TextBox').textContent = "已取消";
+    }
 }
 
 // 帳密登入邏輯
@@ -121,3 +127,4 @@ let Ans = window.prompt('請輸入帳號:');
 if (Ans == '1234') {
     console.log(Ans);
 }
+

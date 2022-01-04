@@ -99,3 +99,16 @@ console.log("z=", z);
 // var 的全域與區域作用，只存在 function (函數) 之內
 // { 區塊敘述 } if、else、for、while
 // 判斷式 if {} else {}
+
+document.getElementById('TestBox').textContent="1234";
+
+// 確認對話框 '提示訊息'
+// window.confirm('繼續請按確定，退出請按取消');
+
+// 條件分支 if
+if (window.confirm('繼續請按確定，退出請按取消')) {
+    // 控制台訊息
+    console.log('確定');
+} else {
+    console.log('已取消');
+}

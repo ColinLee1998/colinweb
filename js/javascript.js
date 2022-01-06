@@ -1,5 +1,7 @@
 document.write("javascript!");
 
+function test() {
+
 // 資料型別(原生) : 數值(number)、字串(string)、布林(boolean)、未定義(undefined)、空值(null)
 // 物件型別(object)、符號(symbol)
 
@@ -170,4 +172,5 @@ function TimeItem() {
     } else {
         TestName.textContent = "歡迎團購商品!";
     }
+}
 }

@@ -14,3 +14,16 @@ for (let i = 0; i < Items.length; i++) {
     let Div = document.getElementById('ProjectContent');
     Div.appendChild(liName);
 }
+
+// 變數 變更值
+let a = 3.14;
+console.log(a);
+a = 2;
+console.log(a);
+
+// 常數 無法變更值
+const pi = 3.14;
+
+console.log(pi);
+pi = 2;
+console.log(pi);

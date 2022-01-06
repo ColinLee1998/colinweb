@@ -174,3 +174,12 @@ function TimeItem() {
     }
 }
 }
+
+ForCode();
+// 迴圈 for (迴圈條件) {語法}
+function ForCode() {
+    let i;
+    for ( i = 1; i <= 10; i = i + 1) {
+        console.log(i);
+    }
+}

@@ -36,7 +36,7 @@ document.write("<br> Boolean(0)" + Boolean(NaN));
 document.write("<br> Boolean(123" + Boolean(123));
 
 // 未定義(undefined) 變數沒有被宣告；或是宣告變數但沒給值
-var x;
+var p;
 y = 1; // 設定名稱，給予值，javascript 會將其轉換為變數
 document.write("<br>" + y);
 
@@ -191,7 +191,7 @@ function ForCode() {
 }
 
 // 迴圈 while(條件) {執行程式}
-// WhileCode();
+WhileCode();
 function WhileCode() {
     // 總數
     let Number = 100;
@@ -199,15 +199,21 @@ function WhileCode() {
     let attack;
     while ( Number > 0) {
         // 產生亂數 Math.random() -- 0 ~ 1
-        attack = Math.random();
+        attack = Math.floor(Math.random() * 41);
+        console.log('亂數值 : ' + attack);
+
+        if (attack > 30) 
+            Number = Number - attack;
+
+            console.log('計算結果 : ' + Number);
     }
 }
 
-let ac = Math.random();
-console.log(ac);
+// let ac = Math.random();
+// console.log(ac);
 
-let ack = Math.random() * 41;
-console.log(ack);
+// let ack = Math.random() * 41;
+// console.log(ack);
 
-let ackk = Math.floor(Math.random() * 41);
-console.log(ackk);
+// let ackk = Math.floor(Math.random() * 41);
+// console.log(ackk);

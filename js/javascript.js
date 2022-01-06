@@ -222,7 +222,8 @@ ArrayCode();
 // 陣列 ['資料'，'資料'] ; 利用索引編號找值；陣列第一筆資料編號永遠為 0 (除非重新設定)
 function ArrayCode() {
     let Item = ['01',01];
-    for (let i = 0; i < 2; i++) {
+    // Item.length 陣列的長度
+    for (let i = 0; i < Item.length; i++) {
         console.log(Item[i]);
     }
 }

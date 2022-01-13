@@ -22,12 +22,6 @@ img {
 
 a {
   text-decoration: none;
-  color: #808040;
-}
-
-a:hover {
-  color: #CD853F;
-  font-weight: 520;
 }
 
 @media screen and (max-width: 576px) {
@@ -73,20 +67,28 @@ a:hover {
     display: none;
   }
   header #MobileNav {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     z-index: 9999;
+    position: fixed;
     display: none;
     background-color: tomato;
     text-decoration: none;
+  }
+  header #MobileNav > li {
+    width: 85%;
+    margin-top: 35px;
+  }
+  header #MobileNav > li > a {
+    color: white;
+    font-size: 1.7em;
   }
   header #BannerBox {
     width: 100vw;
     overflow: hidden;
     background-color: cornflowerblue;
     margin-top: 65px;
-    position: relative;
   }
   header #BannerBox > .Arrow {
     width: 100%;
@@ -425,6 +427,7 @@ a:hover {
   }
   header nav {
     width: 100%;
+    z-index: 999;
     position: fixed;
     top: 0;
     background-color: white;
@@ -460,16 +463,29 @@ a:hover {
     display: none;
   }
   header #MobileNav {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    position: fixed;
     background-color: tomato;
     text-decoration: none;
+  }
+  header #MobileNav > li {
+    width: 75%;
+    margin-top: 35px;
+  }
+  header #MobileNav > li > a {
+    color: white;
+    font-size: 1.7em;
   }
   header #BannerBox {
     width: 100vw;
     overflow: hidden;
     background-color: cornflowerblue;
     margin-top: 65px;
+    z-index: 99;
   }
   header #BannerBox > .Arrow {
     width: 100%;
@@ -489,13 +505,14 @@ a:hover {
     height: 120px;
     border-radius: 20px;
     background-color: slategray;
-    position: fixed;
   }
   header #BannerBox > .Arrow > .Larrow {
     left: 10px;
+    margin-left: 12px;
   }
   header #BannerBox > .Arrow > .Rarrow {
     right: 10px;
+    margin-right: 12px;
   }
   header #BannerBox > .RadioBox {
     width: 100%;

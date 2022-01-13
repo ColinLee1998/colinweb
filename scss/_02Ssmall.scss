@@ -68,15 +68,28 @@ header {
 
 	// 手機版的導覽列
 	#MobileNav {
-		width: $W1 * 10;
+		width: $WPer * 10;
 		// 高度單位 vh (裝置的可視高度)
 		height: 100vh;
 		// 定位點 絕對定位 設定階層
 		position: absolute;
 		z-index: 9999;
+		// 導覽列停佇
+		position: fixed;
 		display: none;
 		background-color: tomato;
 		text-decoration: none;
+
+		> li {
+			width: $WPer * 8.5;
+			margin: {
+				top: 35px;
+			};
+			> a {
+				color: white;
+				font-size: $Em * 1.7;
+			}
+		};
 	}
 
 	#BannerBox {
@@ -92,7 +105,7 @@ header {
 		}
 
 		// 相對定位 (移動物件的定位點) -- 重新定位
-		position: relative;
+		// position: relative;
 
 		// 輪播圖左右按鈕
 		> .Arrow {

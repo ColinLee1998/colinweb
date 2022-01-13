@@ -90,6 +90,15 @@ header {
 				font-size: $Em * 1.7;
 			}
 		};
+		> .Close {
+			width: $WPer * 1.2;
+			font-size: $Em * 1.5;
+			color: seagreen;
+			font-weight: 600;
+			background-color: snow;
+			text-align: right;
+			margin-right: $WPer * 1;
+		}
 	}
 
 	#BannerBox {

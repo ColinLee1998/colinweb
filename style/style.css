@@ -89,9 +89,8 @@ a {
     font-size: 1.5em;
     color: seagreen;
     font-weight: 600;
-    background-color: snow;
     text-align: right;
-    margin-right: 10%;
+    margin-right: 5%;
   }
   header #BannerBox {
     width: 100vw;
@@ -480,6 +479,7 @@ a {
     position: fixed;
     background-color: tomato;
     text-decoration: none;
+    top: 0;
   }
   header #MobileNav > li {
     width: 75%;
@@ -488,6 +488,14 @@ a {
   header #MobileNav > li > a {
     color: white;
     font-size: 1.7em;
+  }
+  header #MobileNav > .Close {
+    width: 12%;
+    font-size: 1.5em;
+    color: seagreen;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 5%;
   }
   header #BannerBox {
     width: 100vw;

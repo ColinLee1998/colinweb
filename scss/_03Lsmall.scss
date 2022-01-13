@@ -78,6 +78,8 @@ header {
 		position: fixed;
 		background-color: tomato;
 		text-decoration: none;
+		// 讓導覽列蓋過 Nav
+		top: 0;
 
 		> li {
 			width: $WPer * 7.5;
@@ -89,6 +91,16 @@ header {
 				font-size: $Em * 1.7;
 			}
 		};
+
+		> .Close {
+			width: $WPer * 1.2;
+			font-size: $Em * 1.5;
+			color: seagreen;
+			font-weight: 600;
+			// background-color: snow;
+			text-align: right;
+			margin-right: $WPer * 0.5;
+		}
 	}
 
 	#BannerBox {

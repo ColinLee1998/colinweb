@@ -197,8 +197,6 @@ a {
   }
   header #BannerBox .ImgBox {
     width: 500vw;
-    -webkit-animation: move 25s infinite alternate;
-            animation: move 25s infinite alternate;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
@@ -593,6 +591,10 @@ a {
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
     float: left;
+  }
+  header #BannerBox .ImgBox > .SmallImg:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }
   footer .HRLine {
     margin-bottom: 15px;

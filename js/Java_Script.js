@@ -39,7 +39,7 @@ function AddArticles() {
 }
 
 // 將網頁資料用載入的方式置入框架中
-$('#PortfolioBox'),load('../web/PortTitle.html');
+$('#PortfolioBox').load('../web/PortTitle.html');
 
 // jQuery 語法
 // 行動裝置選單按鈕，開啟與關閉

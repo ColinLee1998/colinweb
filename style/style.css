@@ -807,7 +807,7 @@ a {
 
 @media screen and (min-width: 992px) {
   #Top {
-    display: none;
+    display: block;
     position: absolute;
     z-index: 20;
     width: 60px;
@@ -875,6 +875,9 @@ a {
   header #BannerBox > .ImgBox:hover {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
+  }
+  #main {
+    height: 1650px;
   }
   #main #ContactBox {
     background-image: url(../../images/bg/bg1.gif);

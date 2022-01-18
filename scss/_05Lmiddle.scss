@@ -2,7 +2,7 @@
 // 轉譯後為 後代選擇器 header nav #Portfolio {...}
 
 #Top {
-	@include DN;
+	@include ON;
 	// 浮動
 	position: absolute;
 	z-index: 20;
@@ -113,7 +113,7 @@ footer {
 #main {
 	// article {
 	// 	width: $W10;
-	// 	height: 650px;
+	 	height: 1650px;
 	// 	// 框線 線段粗細 線段樣式 線段顏色
 	// 	border-bottom-width: 2px;
 	// 	border-bottom-style: solid;

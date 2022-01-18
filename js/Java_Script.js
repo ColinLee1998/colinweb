@@ -92,3 +92,31 @@ function AddArticle() {
 
     Por.before(art);
 };
+
+
+TopBtn();
+// 控制 top 按鈕
+function TopBtn() {
+    // 宣告變數 指向 Top 之下 a 標籤
+    let Top = $('#Top');
+    let Topa = $('#Top > a');
+    // 隱藏按鈕
+    Top.hide();
+
+    // 設定按鈕行為
+    Topa.click( function() {
+        // 執行的動畫:當點擊按鈕時，畫面捲動到網頁最上方，加上滑動的秒數
+        $('html, body').animate({scrollTop:0}, 0.35);
+    });
+
+    // 畫面高度 大於 300px，按鈕會出現；低於 300px，按鈕會隱藏
+    $(window).scroll( function() {
+        if ($(this).scrollTop() > 300) {
+            // 淡入
+            Top.fadeIn(222);
+        } else  {
+            // 淡出 先停止之前的動畫，再執行新的動畫
+            Top.stop().fadeOut(222);
+        }
+    })
+}

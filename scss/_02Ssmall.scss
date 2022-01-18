@@ -114,7 +114,7 @@ header {
 		}
 
 		// 相對定位 (移動物件的定位點) -- 重新定位
-		// position: relative;
+		position: relative;
 
 		// 輪播圖左右按鈕
 		> .Arrow {
@@ -144,17 +144,17 @@ header {
 				border-radius: 20px;
 				background-color: slategray;
 				// 定位點 停佇
-				position: fixed;
+				// position: fixed;
 			}
 
 			> .Larrow {	
 				// 靠左
-				left: 10px;
+				margin-left: 10px;
 			}
 
 			> .Rarrow {
 				// 靠右
-				right: 10px;
+				margin-right: 10px;
 			}
 		}
 

@@ -97,6 +97,7 @@ a {
     overflow: hidden;
     background-color: cornflowerblue;
     margin-top: 65px;
+    position: relative;
   }
   header #BannerBox > .Arrow {
     width: 100%;
@@ -116,13 +117,12 @@ a {
     height: 80px;
     border-radius: 20px;
     background-color: slategray;
-    position: fixed;
   }
   header #BannerBox > .Arrow > .Larrow {
-    left: 10px;
+    margin-left: 10px;
   }
   header #BannerBox > .Arrow > .Rarrow {
-    right: 10px;
+    margin-right: 10px;
   }
   header #BannerBox > .RadioBox {
     width: 100%;

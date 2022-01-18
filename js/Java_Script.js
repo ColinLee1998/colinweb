@@ -1,12 +1,11 @@
-// AddArticles();
+AddArticles();
 
 function AddArticles() {
 
     // 陣列 id
     let ArtId = ['PortfolioBox', 'AboutBox', 'ProjectBox'];
     let ArtH1 = ['PortfolioTitle', 'AboutTitle', 'ProjectTitle'];
-    let ArtH1Con = ['平面作品', '網頁作品','影音作品'];
-    let ArtH1PorDiv = ['MGraphic', 'MWeb', 'MAudio'];
+    let ArtH1Con = ['作品集', '關於我','專案介紹'];
 
     // 主要的 article id=main
     let Main = document.getElementById("main");
@@ -29,14 +28,18 @@ function AddArticles() {
 
         // 呼叫聯絡表單
         let connacttable = document.getElementById("ContactBox");
-        
+
         // 放在聯絡表單之上
         connacttable.before(Art);
 
         // 置入文字
         H1.innerHTML = ArtH1Con[i];
     }
+
 }
+
+// 將網頁資料用載入的方式置入框架中
+$('#PortfolioBox'),load('../web/PortTitle.html');
 
 // jQuery 語法
 // 行動裝置選單按鈕，開啟與關閉

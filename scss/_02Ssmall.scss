@@ -96,8 +96,8 @@ header {
 			color: seagreen;
 			font-weight: 600;
 			// background-color: snow;
-			text-align: right;
-			margin-right: $WPer * 0.5;
+			text-align: center;
+			margin-right: $WPer * 1;
 		}
 	}
 
@@ -284,6 +284,8 @@ header {
 			.SmallImg {
 				width: 100vw;
 				float: left;
+				// 切換動畫 滑動的速度
+				transition: transform 1.25s;
 			}
 			> .SmallImg:hover {
 				animation-play-state: paused;

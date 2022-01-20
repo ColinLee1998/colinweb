@@ -285,11 +285,11 @@ header {
 				width: 100vw;
 				float: left;
 				// 切換動畫 滑動的速度
-				transition: transform 1.25s;
+				// transition: transform 1.25s;
 			}
-			> .SmallImg:hover {
-				animation-play-state: paused;
-			}
+			// > .SmallImg:hover {
+			// 	animation-play-state: paused;
+			// }
 			// .Box1 {
 			//     background-color: burlywood;
 			// }

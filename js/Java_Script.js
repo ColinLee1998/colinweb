@@ -131,40 +131,66 @@ function BannerChange() {
     let P04 = document.getElementById('P04');
     let P05 = document.getElementById('P05');
     let Images = document.getElementById('Images');
+    let AllButton = $('#AllButtons > label');
 
-    // 按鈕執行的動作
-    $(P01).click( function() {
-        $(Images).css({
-            transform: 'translateX(0vw)',
-            transition: 'transform 1.5s'
-        })
-    });
+    AllButtons();
+    function AllButtons() {
 
-    $(P02).click( function() {
-        $(Images).css({
-            transform: 'translateX(-100vw)',
-            transition: 'transform 1.5s'
-        })
-    });
+        // 迴圈
+        for ( let i = 0; i < AllButton.length; i++) {
+            // 按鈕執行
+            $(AllButton[i]).click( function(ev) {
+                // ev.currentTarget 監聽群組物件
+                // index() 獲取 label 的索引
+                // 移動的距離 npx = 索引 * 圖片的寬度
+                let index = $(ev.currentTarget).index();
+                let npx = (index * -100);
 
-    $(P03).click( function() {
-        $(Images).css({
-            transform: 'translateX(-200vw)',
-            transition: 'transform 1.5s'
-        })
-    });
+                $(Images).css({
+                    transform: 'translateX(' + npx +'vw)',
+                    transition: 'transform 1.25s'
+                });
+            });
+        }
+    }
 
-    $(P04).click( function() {
-        $(Images).css({
-            transform: 'translateX(-300vw)',
-            transition: 'transform 1.5s'
-        })
-    });
 
-    $(P05).click( function() {
-        $(Images).css({
-            transform: 'translateX(-400vw)',
-            transition: 'transform 1.5s'
-        })
-    });
+    function Buttons() {
+
+        // 按鈕執行的動作
+        $(P01).click( function() {
+            $(Images).css({
+                transform: 'translateX(0vw)',
+                transition: 'transform 1.5s'
+            })
+        });
+
+        $(P02).click( function() {
+            $(Images).css({
+                transform: 'translateX(-100vw)',
+                transition: 'transform 1.5s'
+            })
+        });
+
+        $(P03).click( function() {
+            $(Images).css({
+                transform: 'translateX(-200vw)',
+                transition: 'transform 1.5s'
+            })
+        });
+
+        $(P04).click( function() {
+            $(Images).css({
+                transform: 'translateX(-300vw)',
+                transition: 'transform 1.5s'
+            })
+        });
+
+        $(P05).click( function() {
+            $(Images).css({
+                transform: 'translateX(-400vw)',
+                transition: 'transform 1.5s'
+            })
+        });
+    }
 }

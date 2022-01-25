@@ -234,12 +234,36 @@ a {
     font-weight: 200;
     background-color: chocolate;
   }
+  #main > #PortfolioBox > h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #main > #AboutBox {
+    background-image: url(../../images/bg/bg1.gif);
+  }
+  #main > #AboutBox > h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #main > #ProjectBox > h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   #main #ContactBox {
     background-image: url(../../images/bg/bg1.gif);
   }
   #main #ContactBox #ContactTitle {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #810610;
   }
   #main #ContactBox form {
     width: 80vw;
@@ -453,7 +477,6 @@ a {
     position: fixed;
     background-color: tomato;
     text-decoration: none;
-    top: 0;
   }
   header #MobileNav > li {
     width: 75%;
@@ -477,11 +500,12 @@ a {
     background-color: cornflowerblue;
     margin-top: 65px;
     z-index: 99;
+    position: relative;
   }
   header #BannerBox > .Arrow {
     width: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 15;
     font-size: 1.8em;
     text-align: center;
     line-height: 120px;
@@ -603,6 +627,27 @@ a {
     font-size: 12.8px;
     font-weight: 200;
     background-color: chocolate;
+  }
+  #main > #PortfolioBox > h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main > #AboutBox {
+    background-image: url(../../images/bg/bg1.gif);
+  }
+  #main > #AboutBox > h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main > #ProjectBox > h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #main #ContactBox {
     background-image: url(../../images/bg/bg1.gif);

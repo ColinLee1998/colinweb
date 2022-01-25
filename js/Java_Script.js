@@ -6,6 +6,7 @@ function AddArticles() {
     let ArtId = ['PortfolioBox', 'AboutBox', 'ProjectBox'];
     let ArtH1 = ['PortfolioTitle', 'AboutTitle', 'ProjectTitle'];
     let ArtH1Con = ['作品集', '關於我','專案介紹'];
+    let ArtDiv = ['PorCon', 'AboCon', 'ProCon'];
 
     // 主要的 article id=main
     let Main = document.getElementById("main");
@@ -14,16 +15,19 @@ function AddArticles() {
     for (let i = 0; i < ArtId.length; i++) {
 
         // 新增 article 標籤
-        let Art = document.createElement('article');
+        let Art = document.createElement("article");
         let H1 = document.createElement("h1");
+        let div = document.createElement("div");
 
         // 新增 article 的 id 與 h1 的 class
         Art.setAttribute("id", ArtId[i]);
-        H1.setAttribute("class", ArtH1[i]);
+        H1.setAttribute("id", ArtH1[i]);
+        div.setAttribute("class", ArtDiv[i]);
 
         // 在框架內新增子元素 main > article > h1
         Main.appendChild(Art);
         Art.appendChild(H1);
+        Art.appendChild(div);
 
 
         // 呼叫聯絡表單
@@ -39,7 +43,7 @@ function AddArticles() {
 }
 
 // 將網頁資料用載入的方式置入框架中
-$('#PortfolioBox').load('../web/PortTitle.html');
+$('.PorCon').load('../web/PortTitle.html');
 
 // jQuery 語法
 // 行動裝置選單按鈕，開啟與關閉
@@ -162,7 +166,7 @@ function BannerChange() {
 
         // 重複執行一個函數或是一段代碼，每次調用之間具有固定時間延遲 setInterval()
         // => 箭頭函式
-        let Timer = setInterval( ( ) => {
+        let Timer = setInterval( () => {
             n++;
             // eq() 遍歷方法 找出第 n % AllLeng
             // trigger(事件類型) 觸發被選元素的指定事件類型 例如: click submit (送出)
@@ -180,7 +184,7 @@ function BannerChange() {
 
         // 滑鼠移出圖片，恢復計時
         $('#BannerBox').on('mouseleave'),function() {
-            Timer = setInterval( ( ) => {
+            Timer = setInterval( () => {
             n++;
             AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblings('.blue').
             removeClass('blue');

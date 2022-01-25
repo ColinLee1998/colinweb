@@ -79,7 +79,7 @@ header {
 		background-color: tomato;
 		text-decoration: none;
 		// 讓導覽列蓋過 Nav
-		top: 0;
+		// top: 0;
 
 		> li {
 			width: $WPer * 7.5;
@@ -117,7 +117,7 @@ header {
 		// 階層
 		z-index: 99;
 		// 相對定位 (移動物件的定位點) -- 重新定位
-		// position: relative;
+		position: relative;
 
 		// 輪播圖左右按鈕
 		> .Arrow {
@@ -125,7 +125,7 @@ header {
 			// 相對定位
 			position: absolute;
 			// 層級
-			z-index: 5;
+			z-index: 15;
 			// 文字尺寸
 			font-size: $Em * 1.8;
 			// 水平置中
@@ -347,6 +347,41 @@ footer {
 }
 
 #main {
+
+	> #PortfolioBox {
+		> h1 {
+			text-align: center;
+			font-size: $Em * 2;
+			padding: {
+				top: 10px;
+				bottom: 10px;
+			};
+		}
+	}
+
+	> #AboutBox {
+		background-image: url(../../images/bg/bg1.gif);
+		> h1 {
+			text-align: center;
+			font-size: $Em * 2;
+			padding: {
+				top: 10px;
+				bottom: 10px;
+			};
+		}
+	}
+
+	> #ProjectBox {
+		> h1 {
+			text-align: center;
+			font-size: $Em * 2;
+			padding: {
+				top: 10px;
+				bottom: 10px;
+			};
+		}
+	}
+
 	#ContactBox {
 
 		background-image: url(../../images/bg/bg1.gif);

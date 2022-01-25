@@ -369,16 +369,55 @@ footer {
 }
 
 #main {
+
+	> #PortfolioBox {
+		> h1 {
+			text-align: center;
+			font-size: $Em * 2;
+			padding: {
+				top: 15px;
+				bottom: 15px;
+			};
+		}
+	}
+
+	> #AboutBox {
+		background-image: url(../../images/bg/bg1.gif);
+		> h1 {
+			text-align: center;
+			font-size: $Em * 2;
+			padding: {
+				top: 15px;
+				bottom: 15px;
+			};
+		}
+	}
+
+	> #ProjectBox {
+		> h1 {
+			text-align: center;
+			font-size: $Em * 2;
+			padding: {
+				top: 15px;
+				bottom: 15px;
+			};
+		}
+	}
+	
 	#ContactBox {
 
 		background-image: url(../../images/bg/bg1.gif);
 		// 標題
 		#ContactTitle {
+
+			text-align: center;
+			font-size: $Em * 2;
 			// 外間距 margin ；上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
 			padding: {
-				top: 10px;
-				bottom: 10px;
+				top: 15px;
+				bottom: 15px;
 			}
+			color: #810610;
 		}
 
 		form {

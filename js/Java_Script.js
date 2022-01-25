@@ -153,17 +153,16 @@ function BannerChange() {
                 });
             });
         }
-        AutoChange();
     }
 
-    // 自動輪播
-    function AutoChange() {
+        // 自動輪播
+
         // 宣告計時器變數 找到要切換的第 n 個 button
         let n = 0;
 
         // 重複執行一個函數或是一段代碼，每次調用之間具有固定時間延遲 setInterval()
         // => 箭頭函式
-        setInterval( ( ) => {
+        let Timer = setInterval( ( ) => {
             n++;
             // eq() 遍歷方法 找出第 n % AllLeng
             // trigger(事件類型) 觸發被選元素的指定事件類型 例如: click submit (送出)
@@ -173,8 +172,20 @@ function BannerChange() {
             AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblings('.blue').
             removeClass('blue');
         }, 3000 );
-    }
 
+        // 滑鼠移入圖片，清除計時器 (停止)
+        $('#BannerBox').on('mouseenter'),function() {
+            window.clearInterval(Timer);
+        }
+
+        // 滑鼠移出圖片，恢復計時
+        $('#BannerBox').on('mouseleave'),function() {
+            Timer = setInterval( ( ) => {
+            n++;
+            AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblings('.blue').
+            removeClass('blue');
+        }, 3000 );
+        }
 
     function Buttons() {
 

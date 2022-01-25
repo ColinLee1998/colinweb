@@ -436,7 +436,8 @@ a {
     z-index: 999;
     position: fixed;
     top: 0;
-    background-color: white;
+    color: #bb3d00;
+    background-color: #ffbd9d;
   }
   header nav li {
     float: left;

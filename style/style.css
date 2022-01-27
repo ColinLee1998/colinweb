@@ -249,6 +249,12 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  #main > #AboutBox > .AboCon {
+    width: 90%;
+    padding-bottom: 15px;
+    background-color: antiquewhite;
+    line-height: 22.4px;
+  }
   #main > #ProjectBox > h1 {
     text-align: center;
     font-size: 2em;

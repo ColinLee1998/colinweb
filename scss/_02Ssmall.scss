@@ -282,6 +282,7 @@ header {
 			width: $W10 * 5;
 			// 呼叫動畫 動畫名稱 總秒數 播放次數(無限播放) 反向播放
 			// animation: move 25s infinite alternate;
+			font-size: 0; // 讓 banner 區塊下面的背景縫隙消失
 			.SmallImg {
 				width: 100vw;
 				float: left;

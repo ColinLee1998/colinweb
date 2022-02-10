@@ -179,6 +179,7 @@ a {
   }
   header #BannerBox .ImgBox {
     width: 500vw;
+    font-size: 0;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
@@ -607,6 +608,7 @@ a {
   }
   header #BannerBox .ImgBox {
     width: 500vw;
+    font-size: 0;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;

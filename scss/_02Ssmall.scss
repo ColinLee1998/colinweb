@@ -16,7 +16,7 @@ header {
 		position: fixed;
 		top: 0;
 		// 設定階層
-		z-index: 999;
+		z-index: 9999;
 
 		color: #bb3d00;
 		background-color: #ffbd9d;
@@ -74,6 +74,7 @@ header {
 		// 定位點 絕對定位 設定階層
 		position: absolute;
 		z-index: 9999;
+		top: 0;
 		// 導覽列停佇
 		position: fixed;
 		display: none;

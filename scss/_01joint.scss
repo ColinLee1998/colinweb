@@ -62,7 +62,7 @@ $WPer: 10%;
 	display: none;
 }
 
-// MIXIN 混和模式
+// MIXIN 混和函式
 @mixin DN {
 	display: none;
 }
@@ -70,8 +70,11 @@ $WPer: 10%;
 @mixin ON {
 	display: block;
 }
-
-@mixin BgText {
+@mixin Clear {
+	clear: both;
+	
+}
+@mixin BgText ($Bs){
 	// 將文字移至裝置外
 	text-indent: -99999px;
 	// 背景圖片對齊 (定位點)
@@ -80,7 +83,24 @@ $WPer: 10%;
 	background-repeat: no-repeat;
 	// 背景圖片尺寸 auto自動 cover符合框架尺寸 (背景圖片小於容器時，放大圖片製容器的大小並填滿；背景圖片大於容器時，縮小圖片至容器大小並填滿；缺點，容器的長寬比例不合時，會出現背景圖片失真)
 	// contain (背景圖片大於容器時，縮小至容器內呈現，會留邊界)
-	background-size: contain;
+	background-size: $Bs;
+}
+
+@mixin BG($Folder, $Photo, $Bs) {
+	// 插值(Interpolation)，基於javascript es6
+	// #{$variable_name}，自行輸入值
+	// 背景圖位置
+	background-image: url(../../images/#{$Folder}/#{$Photo});
+	// 將文字移至裝置之外
+	text-indent: -9999px;
+	// 背景圖片對齊(定位點)
+	background-position: center;
+	// 背景圖片取消重複顯示
+	background-repeat: no-repeat;
+	// 背景圖片尺寸 auto自動 cover符合框架尺寸 (背景圖片小於容器時，放大圖片製容器的大小並填滿；背景圖片大於容器時，縮小圖片至容器大小並填滿；缺點，容器的長寬比例不合時，會出現背景圖片失真)
+	// contain (背景圖片大於容器時，縮小至容器內呈現，會留邊界)
+	background-size: $Bs;
+
 }
 
 // 設定 05 06 07 檔案共用的寬度、導覽列的按鈕，所以會在 nav 內呼叫

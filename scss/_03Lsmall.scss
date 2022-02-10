@@ -11,12 +11,14 @@ header {
 	nav {
 		// Nav 的寬度變數傳回
 		width: $NW;
+		height: $NH;
 		
-		// 階層
-		z-index: 999;
 		// 停佇在畫面上方，不隨著畫面滑動而消失
 		position: fixed;
 		top: 0;
+		// 階層
+		z-index: 999;
+
 		color: #bb3d00;
 		background-color: #ffbd9d;
 		// 指向清單物件 li
@@ -47,7 +49,7 @@ header {
 			width: $W1;
 			text-align: center;
 			line-height: $NH;
-			@include BgText;
+			@include BgText(contain);
 			// 背景圖片連結
 			background-image: url(../../images/icon/000001.svg);
 			background-color: rgb(75, 72, 72);
@@ -73,6 +75,7 @@ header {
 		// 定位點 絕對定位 設定階層
 		position: absolute;
 		z-index: 9999;
+		top: $NH; // 導覽列開啟，往下滑動不會跑出縫隙
 		display: none;
 		// 導覽列停佇
 		position: fixed;
@@ -115,7 +118,7 @@ header {
 		}
 
 		// 階層
-		z-index: 99;
+		// z-index: 99;
 		// 相對定位 (移動物件的定位點) -- 重新定位
 		position: relative;
 
@@ -256,6 +259,30 @@ header {
 			// 	transform: translateX(-400vw);
 			// }
 		}
+
+		// 控制按鈕
+		> .Controls_Visible {
+			position: absolute;
+			width: $W1 * 10;
+			text-align: center;
+			bottom: 12px;
+
+			label {
+				// 顯示方式 行內區塊
+				display: inline-block;
+				// 寬度與高度 同數值為正
+				width: 10px;
+				height: 10px;
+				// 物件的左右間距
+				margin: 0 5px;
+				// 背景顏色
+				background-color: white;
+				// 圓角 正圓
+				border-radius: 50%;
+				// 框線
+				border: 2px solid white;
+			}
+		}
 		
 		.ImgBox {
 			// 圖片框的寬度尺寸
@@ -266,9 +293,9 @@ header {
 				width: 100vw;
 				float: left;
 			}
-			> .SmallImg:hover {
-				animation-play-state: paused;
-			}
+			// > .SmallImg:hover {
+			// 	animation-play-state: paused;
+			// }
 			// .Box1 {
 			//     background-color: burlywood;
 			// }
@@ -348,16 +375,16 @@ footer {
 
 #main {
 
-	> #PortfolioBox {
-		> h1 {
-			text-align: center;
-			font-size: $Em * 2;
-			padding: {
-				top: 10px;
-				bottom: 10px;
-			};
-		}
-	}
+	// > #PortfolioBox {
+	// 	> h1 {
+	// 		text-align: center;
+	// 		font-size: $Em * 2;
+	// 		padding: {
+	// 			top: 10px;
+	// 			bottom: 10px;
+	// 		};
+	// 	}
+	// }
 
 	> #AboutBox {
 		background-image: url(../../images/bg/bg1.gif);
@@ -368,6 +395,36 @@ footer {
 				top: 10px;
 				bottom: 10px;
 			};
+		}
+
+		> .AboCon {
+			width: 90%;
+			padding-bottom: 15px;
+			background-color: rgb(228, 223, 158);
+			line-height: $text * 1.4;
+
+			> div {
+
+				margin: {
+					left: 5%;
+					right: 5%;
+				}
+				border-width: 2px;
+				// border-style:groove;
+				// border-color: black;
+
+				> .skill {
+					font-weight: 600;
+					margin-left: 5%;
+					color: darkcyan;
+				}
+
+				> .exp {
+					font-weight: 600;
+					margin-left: 5%;
+					color: darkcyan;
+				}
+			}
 		}
 	}
 

@@ -3,10 +3,10 @@ AddArticles();
 function AddArticles() {
 
     // 陣列 id
-    let ArtId = ['PortfolioBox', 'AboutBox', 'ProjectBox'];
-    let ArtH1 = ['PortfolioTitle', 'AboutTitle', 'ProjectTitle'];
-    let ArtH1Con = ['作品集', '關於我','專案介紹'];
-    let ArtDiv = ['PorCon', 'AboCon', 'ProCon'];
+    let ArtId = ['AboutBox', 'ProjectBox'];
+    let ArtH1 = ['AboutTitle', 'ProjectTitle'];
+    let ArtH1Con = ['關於我','專案介紹'];
+    let ArtDiv = ['AboCon', 'ProCon'];
 
     // 主要的 article id=main
     let Main = document.getElementById("main");
@@ -43,7 +43,6 @@ function AddArticles() {
 }
 
 // 將網頁資料用載入的方式置入框架中
-$('.PorCon').load('../web/PortTitle.html');
 $('.AboCon').load('../web/about.html');
 // jQuery 語法
 // 行動裝置選單按鈕，開啟與關閉
@@ -59,6 +58,13 @@ $('#Menu').click(function() {
 $('.Close').click(function() {
     $('#MobileNav').hide();
 });
+
+// $('#Contact').click(function() {
+//     // $('html,body').animate({
+//     //     scrollTop:$('#Contact').offset().Top
+//     // }, "show");
+//     // return false;
+// })
 
 function AddArticle() {
     // 呼叫主要的 article id=main

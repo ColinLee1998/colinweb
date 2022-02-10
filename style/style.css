@@ -72,7 +72,7 @@ a {
     height: 100vh;
     position: absolute;
     z-index: 9999;
-    top: 0;
+    top: 65px;
     position: fixed;
     display: none;
     background-color: tomato;
@@ -236,12 +236,6 @@ a {
     font-weight: 200;
     background-color: chocolate;
   }
-  #main > #PortfolioBox > h1 {
-    text-align: center;
-    font-size: 2em;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
   #main > #AboutBox {
     background-image: url(../../images/bg/bg1.gif);
   }
@@ -254,8 +248,26 @@ a {
   #main > #AboutBox > .AboCon {
     width: 90%;
     padding-bottom: 15px;
-    background-color: #f7ec5e;
+    background-color: #e4df9e;
     line-height: 22.4px;
+  }
+  #main > #AboutBox > .AboCon > div {
+    margin-left: 7%;
+    margin-right: 7%;
+    border-width: 2px;
+  }
+  #main > #AboutBox > .AboCon > div > .skill {
+    font-weight: 600;
+    margin-left: 5%;
+    color: darkcyan;
+  }
+  #main > #AboutBox > .AboCon > div > .exp {
+    font-weight: 600;
+    margin-left: 5%;
+    color: darkcyan;
+  }
+  #main > #ProjectBox {
+    background-image: url(../../images/bg/bg1.gif);
   }
   #main > #ProjectBox > h1 {
     text-align: center;
@@ -444,9 +456,10 @@ a {
   }
   header nav {
     width: 100%;
-    z-index: 999;
+    height: 65px;
     position: fixed;
     top: 0;
+    z-index: 999;
     color: #bb3d00;
     background-color: #ffbd9d;
   }
@@ -485,6 +498,7 @@ a {
     height: 100vh;
     position: absolute;
     z-index: 9999;
+    top: 65px;
     display: none;
     position: fixed;
     background-color: tomato;
@@ -511,7 +525,6 @@ a {
     overflow: hidden;
     background-color: cornflowerblue;
     margin-top: 65px;
-    z-index: 99;
     position: relative;
   }
   header #BannerBox > .Arrow {
@@ -577,16 +590,27 @@ a {
   header #BannerBox > .RadioBox > input[type="radio"]:nth-of-type(5):checked ~ .Controls_Visible label:nth-of-type(5) {
     background-color: darkslategray;
   }
+  header #BannerBox > .Controls_Visible {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    bottom: 12px;
+  }
+  header #BannerBox > .Controls_Visible label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
   header #BannerBox .ImgBox {
     width: 500vw;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
     float: left;
-  }
-  header #BannerBox .ImgBox > .SmallImg:hover {
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
   }
   footer .HRLine {
     margin-bottom: 15px;
@@ -640,12 +664,6 @@ a {
     font-weight: 200;
     background-color: chocolate;
   }
-  #main > #PortfolioBox > h1 {
-    text-align: center;
-    font-size: 2em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
   #main > #AboutBox {
     background-image: url(../../images/bg/bg1.gif);
   }
@@ -654,6 +672,27 @@ a {
     font-size: 2em;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon {
+    width: 90%;
+    padding-bottom: 15px;
+    background-color: #e4df9e;
+    line-height: 22.4px;
+  }
+  #main > #AboutBox > .AboCon > div {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-width: 2px;
+  }
+  #main > #AboutBox > .AboCon > div > .skill {
+    font-weight: 600;
+    margin-left: 5%;
+    color: darkcyan;
+  }
+  #main > #AboutBox > .AboCon > div > .exp {
+    font-weight: 600;
+    margin-left: 5%;
+    color: darkcyan;
   }
   #main > #ProjectBox > h1 {
     text-align: center;

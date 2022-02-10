@@ -28,7 +28,7 @@ header {
 			width: $W1;
 			text-align: center;
 			line-height: $NH;
-			@include BgText;
+			@include BgText(contain);
 			// 背景圖片連結
 			background-image: url(../../images/icon/000001.svg);
 			background-color: rgb(75, 72, 72);

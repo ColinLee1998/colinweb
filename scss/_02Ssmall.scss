@@ -48,7 +48,7 @@ header {
 			width: $W1 * 1 + 5vw;
 			text-align: center;
 			line-height: $NH;
-			@include BgText;
+			@include BgText(contain);
 			// 背景圖片連結
 			background-image: url(../../images/icon/000001.svg);
 			background-color: rgb(75, 72, 72);
@@ -74,7 +74,7 @@ header {
 		// 定位點 絕對定位 設定階層
 		position: absolute;
 		z-index: 9999;
-		top: 0;
+		top: $NH;
 		// 導覽列停佇
 		position: fixed;
 		display: none;
@@ -109,7 +109,7 @@ header {
 		overflow: hidden;
 		background-color: cornflowerblue;
 
-		// 導覽固定在上方，會形成浮動狀態，故廣告區的上方要用 外間距 設定為高度
+		// // 導覽固定在上方，會形成浮動狀態，故廣告區的上方要用 外間距 設定為高度
 		margin: {
 			top: $NH;
 		}
@@ -371,19 +371,20 @@ footer {
 
 #main {
 
-	> #PortfolioBox {
-		> h1 {
-			text-align: center;
-			font-size: $Em * 2;
-			padding: {
-				top: 15px;
-				bottom: 15px;
-			};
-		}
-	}
+	// > #PortfolioBox {
+	// 	> h1 {
+	// 		text-align: center;
+	// 		font-size: $Em * 2;
+	// 		padding: {
+	// 			top: 15px;
+	// 			bottom: 15px;
+	// 		};
+	// 	}
+	// }
 
 	> #AboutBox {
 		background-image: url(../../images/bg/bg1.gif);
+		// top: 0;
 		> h1 {
 			text-align: center;
 			font-size: $Em * 2;
@@ -396,12 +397,36 @@ footer {
 		> .AboCon {
 			width: 90%;
 			padding-bottom: 15px;
-			background-color: rgb(247, 236, 94);
+			background-color: rgb(228, 223, 158);
 			line-height: $text * 1.4;
+
+			> div {
+
+				margin: {
+					left: 7%;
+					right: 7%;
+				}
+				border-width: 2px;
+				// border-style:groove;
+				// border-color: black;
+
+				> .skill {
+					font-weight: 600;
+					margin-left: 5%;
+					color: darkcyan;
+				}
+
+				> .exp {
+					font-weight: 600;
+					margin-left: 5%;
+					color: darkcyan;
+				}
+			}
 		}
 	}
 
 	> #ProjectBox {
+		background-image: url(../../images/bg/bg1.gif);
 		> h1 {
 			text-align: center;
 			font-size: $Em * 2;

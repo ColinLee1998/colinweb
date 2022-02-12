@@ -49,6 +49,8 @@ $('.AboCon').load('web/about.html');
 // 1. 隱藏 MobileNav 區塊
 $('#MobileNav').hide();
 
+$('#ProjectBox').hide();
+
 // 2. 點擊按鈕 Menu 開啟 MobileNav 區塊
 $('#Menu').click(function() {
     $('#MobileNav').show();

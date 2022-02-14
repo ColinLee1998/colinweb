@@ -239,6 +239,7 @@ a {
   }
   #main > #AboutBox {
     background-image: url(../../images/bg/bg1.gif);
+    z-index: 1000;
   }
   #main > #AboutBox > h1 {
     text-align: center;
@@ -706,8 +707,14 @@ a {
     background-image: url(../../images/bg/bg1.gif);
   }
   #main #ContactBox #ContactTitle {
+    width: 90%;
+    text-align: center;
+    font-size: 2em;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #810610;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
   }
   #main #ContactBox form {
     width: 65vw;

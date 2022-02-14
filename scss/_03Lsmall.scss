@@ -445,11 +445,21 @@ footer {
 		background-image: url(../../images/bg/bg1.gif);
 		// 標題
 		#ContactTitle {
+
+			width: $WPer * 9;
+			text-align: center;
+			font-size: $Em * 2;
 			// 外間距 margin ；上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
 			padding: {
 				top: 10px;
 				bottom: 10px;
 			}
+
+			color: #810610;
+			border-bottom: 1px solid;
+			margin: {
+				bottom: 30px;
+			};
 		}
 
 		form {
